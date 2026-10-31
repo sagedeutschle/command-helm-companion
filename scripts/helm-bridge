@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+"""Run the standalone bridge from an installed clean source checkout."""
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent.parent/'bridge'))
+from helm_remote.setup import main
+raise SystemExit(main())

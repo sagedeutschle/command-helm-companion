@@ -1,0 +1,798 @@
+[
+  {
+    "path": ".gitignore",
+    "sha256": "b07d32ad267d1fe3c6273ac0149feefeb5d4a5517b4eaac7e077d9ca3c5cf97c"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "sha256": "8f833e8b9ff380817f1594ed42a3563ce62063d4fb28d2dd2fa08291cef47bb4"
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "66219e79b6367aa9a981e01daccb26b3eb8a602d2e988e3c4c765fbe1a86eecd"
+  },
+  {
+    "path": "README.md",
+    "sha256": "b1ff08c016fd6d757689bdbb06be66e4c5d8cc9458fc37deb8c8027513d79ded"
+  },
+  {
+    "path": "docs/getting-started.md",
+    "sha256": "7c33663eae5c4aa356da7e29fff11f6c757ac1398d5c663549cf94b1d7bbe27e"
+  },
+  {
+    "path": "docs/netbird.md",
+    "sha256": "85c567390fe9ee8b57af3b22f8ebf6b79535db1c503c49b750bacf552895e811"
+  },
+  {
+    "path": "docs/privacy.md",
+    "sha256": "c62ece8a185a1ac7b41427be3839cf89a4c95e213e40af32802beb40a0ffca2f"
+  },
+  {
+    "path": "docs/support.md",
+    "sha256": "c6a90802a85dbff5aedee0f41799036d793927d6200585bdb044e0f33cd316ba"
+  },
+  {
+    "path": "bridge/helm_remote/collector.py",
+    "sha256": "4562a0bbfb508b41f74664d3065f779575a56b0677bc7cbe7b0f76d45b86575b"
+  },
+  {
+    "path": "bridge/helm_remote/connections.py",
+    "sha256": "0a5ebd8508c1bd955674550894a09762266d36efc34f6f23136e92110286139d"
+  },
+  {
+    "path": "bridge/helm_remote/devices.py",
+    "sha256": "85e72aceae1a51102b89be782884c23d185dc8ee2f0cb7e219739a91de251751"
+  },
+  {
+    "path": "bridge/helm_remote/hub.py",
+    "sha256": "6dcd63409a38693e93687afaf210c17d2ef3867ae30151b76710ddaa7ddb4761"
+  },
+  {
+    "path": "bridge/helm_remote/mcp.py",
+    "sha256": "403cda8ebad80c7672956d88b4fea0cbbb7806d4a4512ef831117c285d9b1afa"
+  },
+  {
+    "path": "bridge/helm_remote/remote.py",
+    "sha256": "7b9e06e977176a7649c6f41039e9a60103b53bc0e3c325fb27e607c5b4155c63"
+  },
+  {
+    "path": "bridge/helm_remote/rpc.py",
+    "sha256": "7a8fac036cc7104de32d6846a697a74764084c2d73ecd964f2f7437c99c8ab5d"
+  },
+  {
+    "path": "bridge/helm_remote/server.py",
+    "sha256": "a97ddf82d72659b26bee5c06d9a23ad40e100d58c5e05d508e20134e2aa7385a"
+  },
+  {
+    "path": "bridge/helm_remote/setup.py",
+    "sha256": "18c0e984506d399376cd14fed4e2439d61b99d6f269a173a5bec9a512c20bfd2"
+  },
+  {
+    "path": "bridge/helm_remote/store.py",
+    "sha256": "0403cf53a4ec33eb5b28eeb73b3f7332debbc5ffa09c5c8ffbb1ac6369cb1837"
+  },
+  {
+    "path": "bridge/helm_remote/tasks.py",
+    "sha256": "b9bac1bf6abcbcbf365df9f602c18ef5410e3693441eb979c8a49ec8301c635b"
+  },
+  {
+    "path": "bridge/helm_remote/terminals.py",
+    "sha256": "8876b2889b6b18be317215658c3d81a65c6ccf81e290699b66854cddb9155c7b"
+  },
+  {
+    "path": "bridge/helm_remote/worker.py",
+    "sha256": "032dd812482878ee0e3cfaade0581d3f6a8e8e5da4e8eb6ffd58e5358565d76d"
+  },
+  {
+    "path": "bridge/tests/test_collector.py",
+    "sha256": "6e1a550db194c6e8c9904621c21c6e717701d26fc156e2a9765c1ae45dbc2458"
+  },
+  {
+    "path": "bridge/tests/test_controls.py",
+    "sha256": "ce58eb16597d6e5648b5ea497861108926516aa5bdc6aad435753660bd4fe638"
+  },
+  {
+    "path": "bridge/tests/test_mcp.py",
+    "sha256": "3553f75de5c06dbbbce7056c275c090ce49f819785f957a77629b4e915f10b54"
+  },
+  {
+    "path": "bridge/tests/test_release_connections.py",
+    "sha256": "77dc834675150713a17f3baee45ad46031ae620ca43db16b09205b91259317e3"
+  },
+  {
+    "path": "bridge/tests/test_release_devices.py",
+    "sha256": "08c87e5db34f72d996f87869c2a5abf023d65019967c7e90bfe46a84a25c1f42"
+  },
+  {
+    "path": "bridge/tests/test_release_hub.py",
+    "sha256": "3d9e82b7bcff41f1f7204ffb1066ade4686d8a645e01ec692533b45d321c37e6"
+  },
+  {
+    "path": "bridge/tests/test_release_legacy_entry.py",
+    "sha256": "151b4726321a46dc5e8e4f81a4056a4b74e1d8c8704f28dbe3112eb7fa2cd64b"
+  },
+  {
+    "path": "bridge/tests/test_release_server.py",
+    "sha256": "9294eea74e089e4a87779a1b01cde21cd42bf25334736e027a696e1fcdd13b79"
+  },
+  {
+    "path": "bridge/tests/test_release_setup.py",
+    "sha256": "6cbcd6e3c4c8c804c168d47e096e7be04bb17879b500e55c56f7c87bad4b4062"
+  },
+  {
+    "path": "bridge/tests/test_release_terminals.py",
+    "sha256": "49f58d9702af029ad3ca429cf38b7899d8f36adbdf73918ca00e86d01190c68c"
+  },
+  {
+    "path": "bridge/tests/test_remote.py",
+    "sha256": "026428a8febb7791b7c226bd83a3308e28e918dfed7bd8f9547fa9cb44e0fdc4"
+  },
+  {
+    "path": "bridge/tests/test_server.py",
+    "sha256": "176efe59e147f8352cabe3ce5fa9fde101466d267f60fbd06cf44cd7db447139"
+  },
+  {
+    "path": "bridge/tests/test_store.py",
+    "sha256": "ce2c89c80f53979218cf357c6aeb09b1207547b2ea692095424267592fa49c30"
+  },
+  {
+    "path": "bridge/tests/test_tasks.py",
+    "sha256": "7aeb643cb8e57e102483984a64095348ff92bc457a323bb308ca205421db4578"
+  },
+  {
+    "path": "bridge/tests/test_tls.py",
+    "sha256": "c3350f1fa8577216474ce22cbdf374627b8d09cf45489118af182859b45b7ccb"
+  },
+  {
+    "path": "bridge/tests/test_worker.py",
+    "sha256": "081d1ea0c2f5f58b6c6381d06d50f668f3e84c9c6d99890e094f9d52e1cdbc1b"
+  },
+  {
+    "path": "ios/Sources/App.swift",
+    "sha256": "f2ccb604f259b3a51419d8d1a96fcfcc25d7b8227a5d10aa089db04b84e3eb33"
+  },
+  {
+    "path": "ios/Sources/AppModel.swift",
+    "sha256": "3e4bf0938d0ef3f1380ae5d8d3852a193174bd5ff7456fe7ac062d4a17d937a2"
+  },
+  {
+    "path": "ios/Sources/BridgeClient.swift",
+    "sha256": "3772bd6b61a6dc7238a2c3110728312a6b032a98cd04d97367c9933a86de14dd"
+  },
+  {
+    "path": "ios/Sources/CompanionViews.swift",
+    "sha256": "80f2028cd892f302465261a0c2b4d0bf8f98f98750814dffa0cc5e7fe914c914"
+  },
+  {
+    "path": "ios/Sources/DeviceModels.swift",
+    "sha256": "56157ebcc9355a4d4e203de3e3263e4aa98d5ad06141dd2266977b5e2c34e012"
+  },
+  {
+    "path": "ios/Sources/Models.swift",
+    "sha256": "190e1b7df003d84647af6cdaffe24b182197e156db191d404c88eb61f3b759de"
+  },
+  {
+    "path": "ios/Sources/TaskModels.swift",
+    "sha256": "a50e0223bbb8dcfef9c507e3af94f3b87ff95b5af3eaca5cbe2e550acb0ebbcc"
+  },
+  {
+    "path": "ios/Sources/TasksView.swift",
+    "sha256": "2e4fce2368f17d188ff5575a9584c016847fe74c5deebc4206f8abecb194ebee"
+  },
+  {
+    "path": "ios/Sources/TerminalModels.swift",
+    "sha256": "db20b9f9c4f3beed70bbd96ab704533096a033b4b73b617d9befa6354bc1a93e"
+  },
+  {
+    "path": "ios/Sources/TerminalView.swift",
+    "sha256": "7c381b297aba9f34b7ef121b0b0a3b27675096775bdef76278b4c4f56ff921ef"
+  },
+  {
+    "path": "ios/Sources/Views.swift",
+    "sha256": "1eaea9c154c309e8bc032afc5b8996487a95d1b8200150f509d295ef137aa26e"
+  },
+  {
+    "path": "ios/Tests/BridgeIntegrationTests.swift",
+    "sha256": "bad9bd0c15ed506118cd3d8084c5e2fbddda0e0acce8f147374c36e0bd43c738"
+  },
+  {
+    "path": "ios/Tests/CompanionTests.swift",
+    "sha256": "b4267d64c68f95248a951bd070abac471fe5de7f9357795fa926fd566c23118e"
+  },
+  {
+    "path": "ios/Tests/ContractTests.swift",
+    "sha256": "dd9f4dde6f6b262af57325ff678d8b641f4189308b694797f77536737d94e6d5"
+  },
+  {
+    "path": "ios/Tests/FleetTests.swift",
+    "sha256": "b974340a72121b71380a1bb21a1ca8ac2503db060bd96cdeb630bb63a8c358d7"
+  },
+  {
+    "path": "ios/Tests/TaskTests.swift",
+    "sha256": "1c7df02d4d084f7dde611782ea12b0e3268dc0c37d12e5adf2c54affd6ee4441"
+  },
+  {
+    "path": "ios/Tests/VendoredTerminalTests.swift",
+    "sha256": "86608db9b25e3dea3647be21987f2c90b88c93aa9da80cec662eed518f17391b"
+  },
+  {
+    "path": "ios/UITests/BridgeUITests.swift",
+    "sha256": "a6cb154fb6b4f939516b9017a73f808166adaa3318fa97066bbaacecc3428add"
+  },
+  {
+    "path": "ios/UITests/RemoteUITests.swift",
+    "sha256": "94a5e140a1d712a10081a6ab0f08b4c1722026e2f5243a7c5aea85df27391105"
+  },
+  {
+    "path": "ios/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+    "sha256": "259db350781401352bf13782a437a89449362240d5a64a06e1db814ae43d3342"
+  },
+  {
+    "path": "ios/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json",
+    "sha256": "6ad2c5c3bbcf972c7f02d217d6afcac3f24a10e30510c7e2d06c582371ed9d22"
+  },
+  {
+    "path": "ios/Resources/Assets.xcassets/Contents.json",
+    "sha256": "10e3b5dc202f1cd9fad1f688c8fc9fe9e9669bf3f8295e67d216b10fd99b6f49"
+  },
+  {
+    "path": "ios/Resources/PrivacyInfo.xcprivacy",
+    "sha256": "edf1a81e6e6035129a902e49ce6560d0359beed0642678fcef73bd17001c235a"
+  },
+  {
+    "path": "ios/Resources/SwiftTerm-LICENSE.txt",
+    "sha256": "b64a677c3f0796f04320483c8ade4a59c593c086df33cc741b34a8b65c583edd"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/LICENSE",
+    "sha256": "b64a677c3f0796f04320483c8ade4a59c593c086df33cc741b34a8b65c583edd"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Package.swift",
+    "sha256": "5f34ab3a843078ee599937e1851d593e918e355cc4cd851eb3d390596f691426"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/AppleKittyClipboard.swift",
+    "sha256": "5f31af1778ef602159970d7f74e7efacd9eb43bfe900812ca5111deb47c04641"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/AppleTerminalView.swift",
+    "sha256": "32316d7fe4e11c47c8d415409694e4a0cbef70a8827788f314d2acace0eb747a"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/ArabicShapingData.swift",
+    "sha256": "721a1832e26aa7e26a461707d7a7131677ae86cb52c4c7e93d1bd88d69d3a595"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/BellPolicy.swift",
+    "sha256": "f05cb10a5a5cdae4d6ba93aff8eb2b7667c67a5546953e8b024fff02e9b3e016"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/BellStyle.swift",
+    "sha256": "c20230183477fea72562d48a7426b886bc8951a6bc6416df9dfbc0a72f1babc5"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/BidiMirroringData.swift",
+    "sha256": "1d71a929c84980a799c62a32684a343127111e99cf5373ca7879d17ff9443c0e"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/BlockElementRenderer.swift",
+    "sha256": "0aaf187f58cd9f3d7f2b01cb4dc63a6beffd7fa0b797a955e50ccc9a5b753cff"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/BoxDrawingRenderer.swift",
+    "sha256": "7c1e36e382174c0bee9bdb7dafbb34e54bff039705b625f08fc031d50084bfd9"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/CaretView.swift",
+    "sha256": "099589374dbcb1c6579127c40cb3c847647c655e7ee21d394801ea9f705c8616"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/ColorBridge.swift",
+    "sha256": "85915a353a2b8b0dbfcee56a5f8061eaed8cd44b7941c9ce41f7dfe3f556fdc0"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/ColorContrast+Apple.swift",
+    "sha256": "1e567ac85b290448b39a8b3d1ecb660d00bb830adacde577feb91b8f95744bae"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/ColorContrast.swift",
+    "sha256": "50c023872d56a7adb4eb625b9ea4f7ab8460d853ca496e5111bb418a2f8cbc9d"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/Extensions.swift",
+    "sha256": "a567407b81f9864f9a86c82a070937b5e7763392a1e4cf18e7bd7403f2dffdf6"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/FrameDriver.swift",
+    "sha256": "2dfef666c14609135ab9c2ed0ac0d973eaf37fe8b648d52ec5882125f4ea3da6"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/GlyphFallback.swift",
+    "sha256": "75e2cf7ca5af2b8f5ae7d9f42d236a645cee4c859a2df6d647b5ad6df72af0ff"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/Metal/CoreTextGlyphRasterizer.swift",
+    "sha256": "89614cddce3b25b1984d25f5e9fc8cb23afe46c0bb187438afadb919c55c3f9b"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/Metal/GlyphAtlas.swift",
+    "sha256": "ef83f37e94e00b270e1985c0e96eb264b00720babe26c610b85b96aaacaf3ed9"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/Metal/MetalBufferingMode.swift",
+    "sha256": "e4a11fe1bca301091f4ec1431d069ef0f1fdf5e12c167f5051eedd10ce2fdcd7"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/Metal/MetalError.swift",
+    "sha256": "f0ea56201061581586d5894e3a229c05809281286ad00d1183d034fe341780c1"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/Metal/MetalRenderTarget.swift",
+    "sha256": "ccfe8542f18b8c0f154cdbbf5e3ebc2f187e03e413a76ab97a72e94a614ae3b9"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/Metal/MetalShaderSource.swift",
+    "sha256": "1f966c8c9333af4f292970852642a0aa22efe30755b8df0e38ad818aecce67fd"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/Metal/MetalSurfaceDiagnostics.swift",
+    "sha256": "bc21881a438a8e35136852b3ee1ee0aef96a8b310c6b6c47c8977a2b9ca38dc8"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/Metal/MetalTerminalRenderer.swift",
+    "sha256": "b62c953b991bc5cc57af1e149cecdafbe3d8b33ed7967890d25dfe60bc74a9f1"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/Metal/PlainTextFont.swift",
+    "sha256": "8c085a50d97cf10143cd2b01ed778bd99dcadc31339d380220e17b1facf42939"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/Metal/TerminalMetalLayerView.swift",
+    "sha256": "253f7a7bb2a659b80191a7a1229a3d870a9cdbcd09e25a598f49cf3b5bb29896"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/PowerlineRenderer.swift",
+    "sha256": "11c2d5ea40f85d00bcf74cc5bb5cb5ff46cee7ee037dd89ef424834a4d7d2f4e"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/RenderLoop.swift",
+    "sha256": "78afe39b19de3d463ef0d9e28ec76c50cb9178a7264e31d900c9334a8e52832f"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/SnapshotTextBuilder.swift",
+    "sha256": "587ff1be417017a3c54f9d0631a9806a87137c3bcf954119a69c4cf609dbbfbc"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/SynchronizedOutputWatchdog.swift",
+    "sha256": "c5cc82080e66b89beb7ec4140fae7ee320c4cc1cd0781171534c1272054a5422"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/TerminalBidi.swift",
+    "sha256": "9c8592084681737cfcbabcb5ac7836d99b8369e6a88afce8123fcb09a14bc55e"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/TerminalEventQueue.swift",
+    "sha256": "cb1760d947e0377fad10fd7904653541f9849f9daccf1fb494bcbfaf1d5eac68"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/TerminalProgressBarView.swift",
+    "sha256": "af962f15165f3b5b6bce91c998a5b754f8031a6c257872d35fc19af4198ac593"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/TerminalRenderOwner.swift",
+    "sha256": "655eb97dde4f1e4c15aaeaa43ea924481a2e16d6652a181abea3970506830be9"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/TerminalSnapshot.swift",
+    "sha256": "82f9b7d401b3a9a96932616abce52248d89d1da7529c0efa00710aac299da2b7"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/TerminalViewDelegate.swift",
+    "sha256": "388b2bcfb73d6a2258131a392dd1ce855d712b598cf80d2f99ab6ed0210cc37e"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Bidi.swift",
+    "sha256": "dd4d318f4f59630bdbbc4d7329c0cf5cd1c90527ef09114f53b3f7562b967e53"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Buffer.swift",
+    "sha256": "2744f530aa02cb438c75862b1ec21e60b4dc10fdbf29266ecc73091769c8737f"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/BufferLine.swift",
+    "sha256": "cdf4c487a5f4b2f038bf5a1571ab46dddea6833f7d6c858e3ec8fd1e8085e2b7"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/BufferSet.swift",
+    "sha256": "8c92deb0a1fbd4fa0f059ce993ace13523071b9cf5f8f8730cff7f42f8b23f91"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/ByteRunScanner.swift",
+    "sha256": "a25a24f68664516878e219b80e4e77cebc88183f5c4c064fc6ac15629dcdc08d"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/CellStorage.swift",
+    "sha256": "6e883aed10412bc1edfd7c0012b9bd55228d22d711cef297cc0ad5a0947508e5"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/CharData.swift",
+    "sha256": "1217ce4ced1dc92f28bcd35162ad6eb2cf7749ede4a24281a0b276f9303ce881"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/CharSets.swift",
+    "sha256": "b0c05a98b7e80bb8d92bdb89a5f0d02eb4955851871cb3ba56c2bfbcd5f49021"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/CircularList.swift",
+    "sha256": "ccb3518edc70d837079dd463b8f4f35cbba3b4dea8c11ed6fada75f407bd6e4d"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Colors.swift",
+    "sha256": "2d331935751e6f990fdfa0283090957477c409cf266235cb65ca4f448ddf90b6"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/CsiParameters.swift",
+    "sha256": "55f62a4d9203791c48a384c07dc6f9a84d872ac9f2cc380c94a4cb02536f4321"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/DECPrivateModes.swift",
+    "sha256": "ef1c6f9a6948b38d781aed846e66123a344625c7f74a3f72fd21436dec1dbf54"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/EmbeddedSupport.swift",
+    "sha256": "60569fb9f876c83624bbbf011483a38d059c36dda35548b365f411a84e1ba2eb"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/EscapeSequenceParser.swift",
+    "sha256": "df5a2d02dbb4e2d600956df5c76b45814bce9449d3a4fd944b22431d18bd73da"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/EscapeSequences.swift",
+    "sha256": "1912103bafb9ec0ae577571eada8597599fce370843d6ab221f6098c2874d30b"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/ExtensionsTerminal.swift",
+    "sha256": "c04881b93cd02bf271766763378c2ae8491215a59398845c58faa30f7d7b46ff"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/File.swift",
+    "sha256": "f9770073060b16c0f494cc1b152c73fe43602b179af63142027b26859b6ae5ee"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Generated/SwiftTermBuildInfo.swift",
+    "sha256": "2e098f2f7857352792231bed21c341d0e313a4570020c565a115ef64865abe38"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Generated/SwiftTermTerminfo.swift",
+    "sha256": "ca99a1796ed0908ae68ea6b1ff81df0bcb51f8da6c8d4ee8ddafe773106c3108"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/HangulInput.swift",
+    "sha256": "b4a0ea6b5c63a483c72d8294ecca54055f98c61a2e83303e8233cf0f91ae0034"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/HeadlessTerminal.swift",
+    "sha256": "b2bff49ae20b8473e0144588185555ed41f960e8e88d0bae5dcf49c047d51a68"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/IOTimerQueue.swift",
+    "sha256": "aa5c1e4c331adcaf11f89cad185fd42fc4a240b8ab15a9148169179d55e07f7f"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/KittyClipboardGrants.swift",
+    "sha256": "6db21abf877146ae52126c9f9cc6ad8e819aca246a5e6032e24132749339e6f4"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/KittyClipboardProtocol.swift",
+    "sha256": "90a46d9f45779c8c03e805cdf5b52331ad1c0795b27648cf92a010489396d66c"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/KittyGraphics.swift",
+    "sha256": "de3e11d393a045e8fc3c5bd201d345c6ff5ee2b556bffea8cfb6a97501a98baa"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/KittyGraphicsSnapshot.swift",
+    "sha256": "1eccc7f2fc29d6d0458fb6a5be8ceec2a6b88a891cb2fd726f61692a1c998237"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/KittyKeyboardEncoder.swift",
+    "sha256": "2b383138c0f2589d28a4fcba82f4f8aa7808ed80493f7b167b34c3de788678a5"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/KittyKeyboardProtocol.swift",
+    "sha256": "f602320b1700ad25ed35f377141cd27b132f53044c8cc5c8d33028f3af6e1e4f"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/KittyPlaceholder.swift",
+    "sha256": "5ba7f18a5b58ff0fba07e345c14346571e854bf260deeb9f636aa82ac465b83d"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Line.swift",
+    "sha256": "6ea349f0df99d9de56f0d9705bb61e45239def6727277d18be65b7fe21b26a08"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/LocalProcess.swift",
+    "sha256": "7be01862b8fb9fa3c4724b3cedd98dbe3a58a1877b40171bf008680e93d58fd3"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Locked.swift",
+    "sha256": "b5139505a25b3ce274f70102e14883ddc4d4302cb922fbe0f7b16e82c2648858"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Mac/MacAccessibilityService.swift",
+    "sha256": "1ff8fa04567b861270655c5faf9245f985082907d2b594346357fd9f61d94495"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Mac/MacCaretView.swift",
+    "sha256": "7db38858a2c76794439ca686d031606033f7cc3b15389acf21c0f6366344e390"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Mac/MacDebugView.swift",
+    "sha256": "d8f1a2ff92b762714ca7842f53db2a1cae1ab5e700cce94cad3bbc24cefa7ac6"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Mac/MacExtensions.swift",
+    "sha256": "b565541812ee1ff18ca922e1de68f23fc3e14f50ab165777747185043f8e5391"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Mac/MacFindBarView.swift",
+    "sha256": "ee9a822ada7a32d5ff138b89dc4ba36211dde6cbb9fa97eaae9a5608c4d8c9f9"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Mac/MacLocalTerminalView.swift",
+    "sha256": "9be38df8c8c15ee13df5f0b8933dc517d1ea1b73466f13216bceaddf9e568631"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Mac/MacTerminalView.swift",
+    "sha256": "7b14a753d8a1d8dd48fc56da8ff3eab8bc6bbcff153a6a1af9f0d8606005d606"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Mac/TerminalLinkOpening.swift",
+    "sha256": "f35c2fe031751cc9ed22c7b4c7f1f10dea4e866f72b276adec990ca50190159e"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Mac/UntrustedTerminalLink.swift",
+    "sha256": "c84913b3232ac9bb23b6f063596cdb32d310898cfbbaf7a7a3fc1277ab6ecfe0"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Portable/TerminalKittyPlaceholders.swift",
+    "sha256": "b8cb3f23f532e6222ced745375c5d89bcc0cfd7ba675681e9789ce9d88bd653c"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Portable/TerminalRasterImage.swift",
+    "sha256": "264abee1707d61e0a81b45f9e2aca033cf47fb9b0ae435fb2d0b9d8b2c5d9e7f"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Portable/TerminalRenderSnapshot.swift",
+    "sha256": "ec283bcbea64832cfc4560a11b88b01ef4487c74506a3ee258d77027a13f52dd"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Portable/TerminalViewport.swift",
+    "sha256": "2e614ac9a873ccb67102f7adbae69602324e330eb24d89c6b86e68b63cd13d0b"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Portable/WASIHostEvents.swift",
+    "sha256": "0b9a8d63c8706ccec0a191283cb4df4d1fe254987bb1a6604ede06028c99fb5e"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Position.swift",
+    "sha256": "b4a2c90a43e9339461184982af38b2db86d55e75925b6026ed11821ed88cf63e"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Profiling.swift",
+    "sha256": "3e6a8f983b664434631a08c90583b9edc3ac0ebf58a07c2ea0a357dbbc243a52"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/ProgramStatus.swift",
+    "sha256": "765d90f28ea6f57d1882f186893754f2b37ae8fd9736e80dc0385967e1e5337a"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Pty.swift",
+    "sha256": "2d73363cedda3c3627b3f388e30f41528de35bdf1cd38a885f2da08a191e98f9"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/SearchEngine.swift",
+    "sha256": "a2d51e904bd6c6f5f216bcf4151c6ec90755170a9d072d742ea1ce6a2129fb9d"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/SearchLineCache.swift",
+    "sha256": "3c0ae93bd72c285e76d6ae847ab178769841fc31d5d1918e06baf2b5dea1d767"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/SearchOptions.swift",
+    "sha256": "9cdfc81b3549ed0f044191fc5981407058d5599ca154cb869b306694311837a6"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/SearchService.swift",
+    "sha256": "e37f5f2d4521f7b0482596b19fcfc158ba4737f7a7f52c72bb5fdb3d60385809"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/SearchState.swift",
+    "sha256": "08285eca96c766e6af9b4d1d3e17657b96c78ca5981e944066171ec9968838ce"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/SelectionService.swift",
+    "sha256": "cfaa91219554cfe9ac25519a55a34047f003557d64a63cdbd4280d14c3916a25"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/SemanticPrompt.swift",
+    "sha256": "dcfb2951aaf35aa745f4faef4cd37e1742a91088140778f6d36fd0bbe408e637"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/SixelDcsHandler.swift",
+    "sha256": "39b47d5dcec8471afe1539fdd2cd93bab12f7ba1d058717d3ce9137faad5e543"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/SyncDebug.swift",
+    "sha256": "f1f4274329c01405a155f8d37339fa130a2fd0ce4e70e68994b308b5d507bfff"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Terminal.swift",
+    "sha256": "a25273abe289aece3fdaf50a1b661a7694fbc6bfe9d35c9ed4102a358b05c794"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/TerminalContentSnapshot.swift",
+    "sha256": "fc41107b2aaf329f29c051d6a07e30614204e002d1d946bb6d405c0d4564cb35"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/TerminalIOPipeline.swift",
+    "sha256": "c813ee21b960f5c504524237fc161981f057c66fc764afec827790c700a0d446"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/TerminalLock.swift",
+    "sha256": "35e28556bd1494b9eecfe53a86b343035c0a1329eb7e6067681e451852f67d85"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/TerminalMouseInput.swift",
+    "sha256": "85510cd095c4068a04b002abe1ba72f3ae5bcca87148a61c94734fcedddfe1fa"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/TerminalOptions.swift",
+    "sha256": "1ffaa32d9511b24cdb0086912489e6b2b5911bcc50f6b035d44d100bb2646c7c"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/TerminalPaste.swift",
+    "sha256": "2f243f59fc38388fa02e5389ef7d5b40df42d353c86487163de010bae2da299e"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/TerminalRowText.swift",
+    "sha256": "ccb4cdd06fb5520efa02b86c465f6ef6e5695a01c08656204395f4f0e2ea00f6"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/TerminalTapPolicy.swift",
+    "sha256": "7f2a76bb09b64d5cf1fbf274eb26618145f3566a26af9554feda0ab5d049d8ec"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/TerminalViewSearch.swift",
+    "sha256": "a3f3fb7467d6816e93c5472bf316a6e7fa35a1aad0a8373dd6d50017340c80db"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/TerminalWebInput.swift",
+    "sha256": "70b7a0836a64e7aaff74bd3124e0f7cb7332cfcd949270cf3ecdd9eb16df645b"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/TextInputUTF16.swift",
+    "sha256": "425c23df1de366296fb435a115a46bc8d0210a1766d733b68a442a69958c5a26"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/UnicodeWidthData.swift",
+    "sha256": "1f52565b229bf1f66c0c4eb9cae4bdbf0719c68107e9db0968d437ea9f37caca"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Utilities.swift",
+    "sha256": "b65a2313d351eb40946e4fe5c2fc9c2f34043ee70716259fad33dd56c6936715"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/iOS/SwiftUITerminalView.swift",
+    "sha256": "23c6b842775b440bc7f57ae5245475021b41b919a82b20dc41e6f05886543072"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/iOS/iOSAccessoryView.swift",
+    "sha256": "590a1d55e99a6ac242bc122ab4074d70c42a723a2bc1826b1a3de66a2974d8f2"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/iOS/iOSCaretView.swift",
+    "sha256": "7360f47d0458ab4227e55b942c9cbf1c42d774f7f12b57fe47ae6e5a85a518a9"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/iOS/iOSDoubleButton.swift",
+    "sha256": "242f540f26f74bd484c454ed1ba60b16d35e1e20cc651f6fac2bdc0de4b635fd"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/iOS/iOSExtensions.swift",
+    "sha256": "bfb03e1b08faf06f62b263ccc52cff96c37a99a926f16fc4d8cfafa0c1753242"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/iOS/iOSKeyboardView.swift",
+    "sha256": "10ecc0bc1c6ff3096f10f4054bce6e7fb82599de04a5c23e0ed70867b063d024"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/iOS/iOSTerminalView.swift",
+    "sha256": "b9076e5a782944dc7864c3e144bad67088c2f8dcf1725883d46cf69be0129ddb"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/iOS/iOSTextInput.swift",
+    "sha256": "dac131926e65bc7a5020181e321176b19f889b25aa14ba5b01a822e81228c0f7"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/iOS/iOSTextStorage.swift",
+    "sha256": "39f198d9aee783f133e416e12af1773dee8caad1d218de76cfbbc7b8bcff54dd"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Upstream/BuildInfoGenerator/BuildInfoGenerator.swift",
+    "sha256": "ff30c1359fbd8ec1ae8e43dc20366c007b6c5e342e73060921246c0342369cdd"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Upstream/BuildInfoGenerator/TerminfoSource.swift",
+    "sha256": "340baf55bbf94fd4ea7db600c1d2a646fbb3fb9053a2138afe5432ce28dd75f1"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Upstream/BuildInfoGenerator/XtgettcapTableGenerator.swift",
+    "sha256": "02467e6425e37418c0a0f079dfcb193b88443d686079670cafedd720162fad0f"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Upstream/BuildInfoPlugin.swift",
+    "sha256": "f687340542eeea5a4a3eb596b137aebc269460281a67b3105b37f2604ab02eef"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Upstream/Generated/SwiftTermBuildInfo.swift",
+    "sha256": "a4609b16518b0285dae3b31423048e175504313da4655da2f3e4972a54ae818d"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Upstream/Generated/SwiftTermTerminfo.swift",
+    "sha256": "ca99a1796ed0908ae68ea6b1ff81df0bcb51f8da6c8d4ee8ddafe773106c3108"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Upstream/Package.swift",
+    "sha256": "448fef1d90cfb8387efb3029709e38c9943b7e0795eeea6f5958337422d27422"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/Upstream/swifterm-terminfo",
+    "sha256": "7819298c1e79b7ba292960fbab41d6604240cf9111f7f3617b775701e008276b"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/README.md",
+    "sha256": "b55c479458d0b9c0de7556b32c65c80d8549795ad6a37b23e8c50d25a9514ce9"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/DOWNSTREAM.patch",
+    "sha256": "c8bfe375cec8e54e2bc0de79e2266f092c3dd952f1e1d3502a6445786293ab57"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/SOURCE-MANIFEST.json",
+    "sha256": "63351088df9ebf151a60f1c6994e7640276bc9101b700f9c1baa717cc0a0f040"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/verify-source.py",
+    "sha256": "409af26d995832d17265e754239891a13084f057dfdd54b9ced111f7f27178db"
+  },
+  {
+    "path": "ios/project.yml",
+    "sha256": "6954193b4ea6559b6e7ea5f0c4414b1c2f688796a7093b51153fa4cc576e7a45"
+  },
+  {
+    "path": "ios/Package.resolved",
+    "sha256": "0fdf624e6819aaba238eaf50ff3a1128aa9c4eaeedc927a18c2a4cda84059e59"
+  },
+  {
+    "path": "scripts/helm-bridge",
+    "sha256": "d3592f3adde303ddda7585895ab00555b952b5c5d4fb330969f86cd6dcf79b37"
+  },
+  {
+    "path": "scripts/helm-agent",
+    "sha256": "5d3674dc1af4df9b91d4a5eafd85831a0c5da923eb45289c0650ecc6a1ed9234"
+  },
+  {
+    "path": "scripts/mcp",
+    "sha256": "4473fa5f30aba1b4bb7b265e156e25f2f9e885aa3657023162b7205701b252ea"
+  },
+  {
+    "path": "scripts/test-ios.py",
+    "sha256": "47145f1e3da0d92fd64cb3f0fac81832ca55df7ba06ed9f8414bd51504ebc26b"
+  },
+  {
+    "path": "docs/backend-setup.md",
+    "sha256": "d31485bc183887cf9b7d8856d24cb20b5183c281a2fe8d35bf0ae54eb3f853a2"
+  }
+]

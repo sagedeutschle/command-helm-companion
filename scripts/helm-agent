@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+"""Launch an agent with Helm without changing global settings."""
+import json
+from pathlib import Path
+import shutil
+import subprocess
+import sys
+
+root = Path(__file__).resolve().parent
+if len(sys.argv)<2 or sys.argv[1] not in ('claude', 'codex'):
+    raise SystemExit('Usage: helm-agent claude|codex [agent arguments]')
+provider = sys.argv[1]
+command = shutil.which(provider)
+if not command: raise SystemExit(f'{provider} is not installed')
+if provider == 'codex':
+    cmd = [command, '-c', 'mcp_servers.helm.command='+json.dumps(str(root/'mcp')),
+           '-c', 'mcp_servers.helm.args=["--provider","codex"]',
+           '-c', 'mcp_servers.helm.tool_timeout_sec=3600', *sys.argv[2:]]
+else:
+    config = {'mcpServers': {'helm': {'command': str(root/'mcp'), 'args': ['--provider', 'claude']}}}
+    cmd = [command, '--mcp-config', json.dumps(config), '--append-system-prompt',
+           'Call helm_checkpoint before each new unit of work and after milestones; follow returned user directions and remain paused on timeout. Use helm_status for concise project updates at start, meaningful milestones, blockers, and completion. Use helm_ask for questions that need the user while they are away. Never send secrets. A timeout is not consent. Keep normal tool permission and sandbox approval flows intact.', *sys.argv[2:]]
+raise SystemExit(subprocess.call(cmd))

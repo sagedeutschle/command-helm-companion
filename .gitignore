@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+ios/CommandHelmRemote.xcodeproj/
+ios/Generated/
+ios/TestSupport/TestBridge.swift
+evidence/
+*.sqlite
+*.sqlite-*
+*.pem
+*.ipa
+*.xcarchive
+.env*

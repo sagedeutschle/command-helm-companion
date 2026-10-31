@@ -1,0 +1,643 @@
+{
+  "downstreamPatch": "command-helm-ios-no-local-media-fix1",
+  "files": {
+    "LICENSE": {
+      "sha256": "b64a677c3f0796f04320483c8ade4a59c593c086df33cc741b34a8b65c583edd",
+      "upstreamPath": "LICENSE",
+      "upstreamSHA256": "b64a677c3f0796f04320483c8ade4a59c593c086df33cc741b34a8b65c583edd"
+    },
+    "Package.swift": {
+      "sha256": "5f34ab3a843078ee599937e1851d593e918e355cc4cd851eb3d390596f691426",
+      "upstreamPath": "Package.swift",
+      "upstreamSHA256": "448fef1d90cfb8387efb3029709e38c9943b7e0795eeea6f5958337422d27422"
+    },
+    "Sources/SwiftTerm/Apple/AppleKittyClipboard.swift": {
+      "sha256": "5f31af1778ef602159970d7f74e7efacd9eb43bfe900812ca5111deb47c04641",
+      "upstreamPath": "Sources/SwiftTerm/Apple/AppleKittyClipboard.swift",
+      "upstreamSHA256": "5f31af1778ef602159970d7f74e7efacd9eb43bfe900812ca5111deb47c04641"
+    },
+    "Sources/SwiftTerm/Apple/AppleTerminalView.swift": {
+      "sha256": "32316d7fe4e11c47c8d415409694e4a0cbef70a8827788f314d2acace0eb747a",
+      "upstreamPath": "Sources/SwiftTerm/Apple/AppleTerminalView.swift",
+      "upstreamSHA256": "32316d7fe4e11c47c8d415409694e4a0cbef70a8827788f314d2acace0eb747a"
+    },
+    "Sources/SwiftTerm/Apple/ArabicShapingData.swift": {
+      "sha256": "721a1832e26aa7e26a461707d7a7131677ae86cb52c4c7e93d1bd88d69d3a595",
+      "upstreamPath": "Sources/SwiftTerm/Apple/ArabicShapingData.swift",
+      "upstreamSHA256": "721a1832e26aa7e26a461707d7a7131677ae86cb52c4c7e93d1bd88d69d3a595"
+    },
+    "Sources/SwiftTerm/Apple/BellPolicy.swift": {
+      "sha256": "f05cb10a5a5cdae4d6ba93aff8eb2b7667c67a5546953e8b024fff02e9b3e016",
+      "upstreamPath": "Sources/SwiftTerm/Apple/BellPolicy.swift",
+      "upstreamSHA256": "f05cb10a5a5cdae4d6ba93aff8eb2b7667c67a5546953e8b024fff02e9b3e016"
+    },
+    "Sources/SwiftTerm/Apple/BellStyle.swift": {
+      "sha256": "c20230183477fea72562d48a7426b886bc8951a6bc6416df9dfbc0a72f1babc5",
+      "upstreamPath": "Sources/SwiftTerm/Apple/BellStyle.swift",
+      "upstreamSHA256": "c20230183477fea72562d48a7426b886bc8951a6bc6416df9dfbc0a72f1babc5"
+    },
+    "Sources/SwiftTerm/Apple/BidiMirroringData.swift": {
+      "sha256": "1d71a929c84980a799c62a32684a343127111e99cf5373ca7879d17ff9443c0e",
+      "upstreamPath": "Sources/SwiftTerm/Apple/BidiMirroringData.swift",
+      "upstreamSHA256": "1d71a929c84980a799c62a32684a343127111e99cf5373ca7879d17ff9443c0e"
+    },
+    "Sources/SwiftTerm/Apple/BlockElementRenderer.swift": {
+      "sha256": "0aaf187f58cd9f3d7f2b01cb4dc63a6beffd7fa0b797a955e50ccc9a5b753cff",
+      "upstreamPath": "Sources/SwiftTerm/Apple/BlockElementRenderer.swift",
+      "upstreamSHA256": "0aaf187f58cd9f3d7f2b01cb4dc63a6beffd7fa0b797a955e50ccc9a5b753cff"
+    },
+    "Sources/SwiftTerm/Apple/BoxDrawingRenderer.swift": {
+      "sha256": "7c1e36e382174c0bee9bdb7dafbb34e54bff039705b625f08fc031d50084bfd9",
+      "upstreamPath": "Sources/SwiftTerm/Apple/BoxDrawingRenderer.swift",
+      "upstreamSHA256": "7c1e36e382174c0bee9bdb7dafbb34e54bff039705b625f08fc031d50084bfd9"
+    },
+    "Sources/SwiftTerm/Apple/CaretView.swift": {
+      "sha256": "099589374dbcb1c6579127c40cb3c847647c655e7ee21d394801ea9f705c8616",
+      "upstreamPath": "Sources/SwiftTerm/Apple/CaretView.swift",
+      "upstreamSHA256": "099589374dbcb1c6579127c40cb3c847647c655e7ee21d394801ea9f705c8616"
+    },
+    "Sources/SwiftTerm/Apple/ColorBridge.swift": {
+      "sha256": "85915a353a2b8b0dbfcee56a5f8061eaed8cd44b7941c9ce41f7dfe3f556fdc0",
+      "upstreamPath": "Sources/SwiftTerm/Apple/ColorBridge.swift",
+      "upstreamSHA256": "85915a353a2b8b0dbfcee56a5f8061eaed8cd44b7941c9ce41f7dfe3f556fdc0"
+    },
+    "Sources/SwiftTerm/Apple/ColorContrast+Apple.swift": {
+      "sha256": "1e567ac85b290448b39a8b3d1ecb660d00bb830adacde577feb91b8f95744bae",
+      "upstreamPath": "Sources/SwiftTerm/Apple/ColorContrast+Apple.swift",
+      "upstreamSHA256": "1e567ac85b290448b39a8b3d1ecb660d00bb830adacde577feb91b8f95744bae"
+    },
+    "Sources/SwiftTerm/Apple/ColorContrast.swift": {
+      "sha256": "50c023872d56a7adb4eb625b9ea4f7ab8460d853ca496e5111bb418a2f8cbc9d",
+      "upstreamPath": "Sources/SwiftTerm/Apple/ColorContrast.swift",
+      "upstreamSHA256": "50c023872d56a7adb4eb625b9ea4f7ab8460d853ca496e5111bb418a2f8cbc9d"
+    },
+    "Sources/SwiftTerm/Apple/Extensions.swift": {
+      "sha256": "a567407b81f9864f9a86c82a070937b5e7763392a1e4cf18e7bd7403f2dffdf6",
+      "upstreamPath": "Sources/SwiftTerm/Apple/Extensions.swift",
+      "upstreamSHA256": "a567407b81f9864f9a86c82a070937b5e7763392a1e4cf18e7bd7403f2dffdf6"
+    },
+    "Sources/SwiftTerm/Apple/FrameDriver.swift": {
+      "sha256": "2dfef666c14609135ab9c2ed0ac0d973eaf37fe8b648d52ec5882125f4ea3da6",
+      "upstreamPath": "Sources/SwiftTerm/Apple/FrameDriver.swift",
+      "upstreamSHA256": "2dfef666c14609135ab9c2ed0ac0d973eaf37fe8b648d52ec5882125f4ea3da6"
+    },
+    "Sources/SwiftTerm/Apple/GlyphFallback.swift": {
+      "sha256": "75e2cf7ca5af2b8f5ae7d9f42d236a645cee4c859a2df6d647b5ad6df72af0ff",
+      "upstreamPath": "Sources/SwiftTerm/Apple/GlyphFallback.swift",
+      "upstreamSHA256": "75e2cf7ca5af2b8f5ae7d9f42d236a645cee4c859a2df6d647b5ad6df72af0ff"
+    },
+    "Sources/SwiftTerm/Apple/Metal/CoreTextGlyphRasterizer.swift": {
+      "sha256": "89614cddce3b25b1984d25f5e9fc8cb23afe46c0bb187438afadb919c55c3f9b",
+      "upstreamPath": "Sources/SwiftTerm/Apple/Metal/CoreTextGlyphRasterizer.swift",
+      "upstreamSHA256": "89614cddce3b25b1984d25f5e9fc8cb23afe46c0bb187438afadb919c55c3f9b"
+    },
+    "Sources/SwiftTerm/Apple/Metal/GlyphAtlas.swift": {
+      "sha256": "ef83f37e94e00b270e1985c0e96eb264b00720babe26c610b85b96aaacaf3ed9",
+      "upstreamPath": "Sources/SwiftTerm/Apple/Metal/GlyphAtlas.swift",
+      "upstreamSHA256": "ef83f37e94e00b270e1985c0e96eb264b00720babe26c610b85b96aaacaf3ed9"
+    },
+    "Sources/SwiftTerm/Apple/Metal/MetalBufferingMode.swift": {
+      "sha256": "e4a11fe1bca301091f4ec1431d069ef0f1fdf5e12c167f5051eedd10ce2fdcd7",
+      "upstreamPath": "Sources/SwiftTerm/Apple/Metal/MetalBufferingMode.swift",
+      "upstreamSHA256": "e4a11fe1bca301091f4ec1431d069ef0f1fdf5e12c167f5051eedd10ce2fdcd7"
+    },
+    "Sources/SwiftTerm/Apple/Metal/MetalError.swift": {
+      "sha256": "f0ea56201061581586d5894e3a229c05809281286ad00d1183d034fe341780c1",
+      "upstreamPath": "Sources/SwiftTerm/Apple/Metal/MetalError.swift",
+      "upstreamSHA256": "f0ea56201061581586d5894e3a229c05809281286ad00d1183d034fe341780c1"
+    },
+    "Sources/SwiftTerm/Apple/Metal/MetalRenderTarget.swift": {
+      "sha256": "ccfe8542f18b8c0f154cdbbf5e3ebc2f187e03e413a76ab97a72e94a614ae3b9",
+      "upstreamPath": "Sources/SwiftTerm/Apple/Metal/MetalRenderTarget.swift",
+      "upstreamSHA256": "ccfe8542f18b8c0f154cdbbf5e3ebc2f187e03e413a76ab97a72e94a614ae3b9"
+    },
+    "Sources/SwiftTerm/Apple/Metal/MetalShaderSource.swift": {
+      "sha256": "1f966c8c9333af4f292970852642a0aa22efe30755b8df0e38ad818aecce67fd",
+      "upstreamPath": "Sources/SwiftTerm/Apple/Metal/MetalShaderSource.swift",
+      "upstreamSHA256": "1f966c8c9333af4f292970852642a0aa22efe30755b8df0e38ad818aecce67fd"
+    },
+    "Sources/SwiftTerm/Apple/Metal/MetalSurfaceDiagnostics.swift": {
+      "sha256": "bc21881a438a8e35136852b3ee1ee0aef96a8b310c6b6c47c8977a2b9ca38dc8",
+      "upstreamPath": "Sources/SwiftTerm/Apple/Metal/MetalSurfaceDiagnostics.swift",
+      "upstreamSHA256": "bc21881a438a8e35136852b3ee1ee0aef96a8b310c6b6c47c8977a2b9ca38dc8"
+    },
+    "Sources/SwiftTerm/Apple/Metal/MetalTerminalRenderer.swift": {
+      "sha256": "b62c953b991bc5cc57af1e149cecdafbe3d8b33ed7967890d25dfe60bc74a9f1",
+      "upstreamPath": "Sources/SwiftTerm/Apple/Metal/MetalTerminalRenderer.swift",
+      "upstreamSHA256": "b62c953b991bc5cc57af1e149cecdafbe3d8b33ed7967890d25dfe60bc74a9f1"
+    },
+    "Sources/SwiftTerm/Apple/Metal/PlainTextFont.swift": {
+      "sha256": "8c085a50d97cf10143cd2b01ed778bd99dcadc31339d380220e17b1facf42939",
+      "upstreamPath": "Sources/SwiftTerm/Apple/Metal/PlainTextFont.swift",
+      "upstreamSHA256": "8c085a50d97cf10143cd2b01ed778bd99dcadc31339d380220e17b1facf42939"
+    },
+    "Sources/SwiftTerm/Apple/Metal/TerminalMetalLayerView.swift": {
+      "sha256": "253f7a7bb2a659b80191a7a1229a3d870a9cdbcd09e25a598f49cf3b5bb29896",
+      "upstreamPath": "Sources/SwiftTerm/Apple/Metal/TerminalMetalLayerView.swift",
+      "upstreamSHA256": "253f7a7bb2a659b80191a7a1229a3d870a9cdbcd09e25a598f49cf3b5bb29896"
+    },
+    "Sources/SwiftTerm/Apple/PowerlineRenderer.swift": {
+      "sha256": "11c2d5ea40f85d00bcf74cc5bb5cb5ff46cee7ee037dd89ef424834a4d7d2f4e",
+      "upstreamPath": "Sources/SwiftTerm/Apple/PowerlineRenderer.swift",
+      "upstreamSHA256": "11c2d5ea40f85d00bcf74cc5bb5cb5ff46cee7ee037dd89ef424834a4d7d2f4e"
+    },
+    "Sources/SwiftTerm/Apple/RenderLoop.swift": {
+      "sha256": "78afe39b19de3d463ef0d9e28ec76c50cb9178a7264e31d900c9334a8e52832f",
+      "upstreamPath": "Sources/SwiftTerm/Apple/RenderLoop.swift",
+      "upstreamSHA256": "78afe39b19de3d463ef0d9e28ec76c50cb9178a7264e31d900c9334a8e52832f"
+    },
+    "Sources/SwiftTerm/Apple/SnapshotTextBuilder.swift": {
+      "sha256": "587ff1be417017a3c54f9d0631a9806a87137c3bcf954119a69c4cf609dbbfbc",
+      "upstreamPath": "Sources/SwiftTerm/Apple/SnapshotTextBuilder.swift",
+      "upstreamSHA256": "587ff1be417017a3c54f9d0631a9806a87137c3bcf954119a69c4cf609dbbfbc"
+    },
+    "Sources/SwiftTerm/Apple/SynchronizedOutputWatchdog.swift": {
+      "sha256": "c5cc82080e66b89beb7ec4140fae7ee320c4cc1cd0781171534c1272054a5422",
+      "upstreamPath": "Sources/SwiftTerm/Apple/SynchronizedOutputWatchdog.swift",
+      "upstreamSHA256": "c5cc82080e66b89beb7ec4140fae7ee320c4cc1cd0781171534c1272054a5422"
+    },
+    "Sources/SwiftTerm/Apple/TerminalBidi.swift": {
+      "sha256": "9c8592084681737cfcbabcb5ac7836d99b8369e6a88afce8123fcb09a14bc55e",
+      "upstreamPath": "Sources/SwiftTerm/Apple/TerminalBidi.swift",
+      "upstreamSHA256": "9c8592084681737cfcbabcb5ac7836d99b8369e6a88afce8123fcb09a14bc55e"
+    },
+    "Sources/SwiftTerm/Apple/TerminalEventQueue.swift": {
+      "sha256": "cb1760d947e0377fad10fd7904653541f9849f9daccf1fb494bcbfaf1d5eac68",
+      "upstreamPath": "Sources/SwiftTerm/Apple/TerminalEventQueue.swift",
+      "upstreamSHA256": "cb1760d947e0377fad10fd7904653541f9849f9daccf1fb494bcbfaf1d5eac68"
+    },
+    "Sources/SwiftTerm/Apple/TerminalProgressBarView.swift": {
+      "sha256": "af962f15165f3b5b6bce91c998a5b754f8031a6c257872d35fc19af4198ac593",
+      "upstreamPath": "Sources/SwiftTerm/Apple/TerminalProgressBarView.swift",
+      "upstreamSHA256": "af962f15165f3b5b6bce91c998a5b754f8031a6c257872d35fc19af4198ac593"
+    },
+    "Sources/SwiftTerm/Apple/TerminalRenderOwner.swift": {
+      "sha256": "655eb97dde4f1e4c15aaeaa43ea924481a2e16d6652a181abea3970506830be9",
+      "upstreamPath": "Sources/SwiftTerm/Apple/TerminalRenderOwner.swift",
+      "upstreamSHA256": "655eb97dde4f1e4c15aaeaa43ea924481a2e16d6652a181abea3970506830be9"
+    },
+    "Sources/SwiftTerm/Apple/TerminalSnapshot.swift": {
+      "sha256": "82f9b7d401b3a9a96932616abce52248d89d1da7529c0efa00710aac299da2b7",
+      "upstreamPath": "Sources/SwiftTerm/Apple/TerminalSnapshot.swift",
+      "upstreamSHA256": "82f9b7d401b3a9a96932616abce52248d89d1da7529c0efa00710aac299da2b7"
+    },
+    "Sources/SwiftTerm/Apple/TerminalViewDelegate.swift": {
+      "sha256": "388b2bcfb73d6a2258131a392dd1ce855d712b598cf80d2f99ab6ed0210cc37e",
+      "upstreamPath": "Sources/SwiftTerm/Apple/TerminalViewDelegate.swift",
+      "upstreamSHA256": "388b2bcfb73d6a2258131a392dd1ce855d712b598cf80d2f99ab6ed0210cc37e"
+    },
+    "Sources/SwiftTerm/Bidi.swift": {
+      "sha256": "dd4d318f4f59630bdbbc4d7329c0cf5cd1c90527ef09114f53b3f7562b967e53",
+      "upstreamPath": "Sources/SwiftTerm/Bidi.swift",
+      "upstreamSHA256": "dd4d318f4f59630bdbbc4d7329c0cf5cd1c90527ef09114f53b3f7562b967e53"
+    },
+    "Sources/SwiftTerm/Buffer.swift": {
+      "sha256": "2744f530aa02cb438c75862b1ec21e60b4dc10fdbf29266ecc73091769c8737f",
+      "upstreamPath": "Sources/SwiftTerm/Buffer.swift",
+      "upstreamSHA256": "2744f530aa02cb438c75862b1ec21e60b4dc10fdbf29266ecc73091769c8737f"
+    },
+    "Sources/SwiftTerm/BufferLine.swift": {
+      "sha256": "cdf4c487a5f4b2f038bf5a1571ab46dddea6833f7d6c858e3ec8fd1e8085e2b7",
+      "upstreamPath": "Sources/SwiftTerm/BufferLine.swift",
+      "upstreamSHA256": "cdf4c487a5f4b2f038bf5a1571ab46dddea6833f7d6c858e3ec8fd1e8085e2b7"
+    },
+    "Sources/SwiftTerm/BufferSet.swift": {
+      "sha256": "8c92deb0a1fbd4fa0f059ce993ace13523071b9cf5f8f8730cff7f42f8b23f91",
+      "upstreamPath": "Sources/SwiftTerm/BufferSet.swift",
+      "upstreamSHA256": "8c92deb0a1fbd4fa0f059ce993ace13523071b9cf5f8f8730cff7f42f8b23f91"
+    },
+    "Sources/SwiftTerm/ByteRunScanner.swift": {
+      "sha256": "a25a24f68664516878e219b80e4e77cebc88183f5c4c064fc6ac15629dcdc08d",
+      "upstreamPath": "Sources/SwiftTerm/ByteRunScanner.swift",
+      "upstreamSHA256": "a25a24f68664516878e219b80e4e77cebc88183f5c4c064fc6ac15629dcdc08d"
+    },
+    "Sources/SwiftTerm/CellStorage.swift": {
+      "sha256": "6e883aed10412bc1edfd7c0012b9bd55228d22d711cef297cc0ad5a0947508e5",
+      "upstreamPath": "Sources/SwiftTerm/CellStorage.swift",
+      "upstreamSHA256": "6e883aed10412bc1edfd7c0012b9bd55228d22d711cef297cc0ad5a0947508e5"
+    },
+    "Sources/SwiftTerm/CharData.swift": {
+      "sha256": "1217ce4ced1dc92f28bcd35162ad6eb2cf7749ede4a24281a0b276f9303ce881",
+      "upstreamPath": "Sources/SwiftTerm/CharData.swift",
+      "upstreamSHA256": "1217ce4ced1dc92f28bcd35162ad6eb2cf7749ede4a24281a0b276f9303ce881"
+    },
+    "Sources/SwiftTerm/CharSets.swift": {
+      "sha256": "b0c05a98b7e80bb8d92bdb89a5f0d02eb4955851871cb3ba56c2bfbcd5f49021",
+      "upstreamPath": "Sources/SwiftTerm/CharSets.swift",
+      "upstreamSHA256": "b0c05a98b7e80bb8d92bdb89a5f0d02eb4955851871cb3ba56c2bfbcd5f49021"
+    },
+    "Sources/SwiftTerm/CircularList.swift": {
+      "sha256": "ccb3518edc70d837079dd463b8f4f35cbba3b4dea8c11ed6fada75f407bd6e4d",
+      "upstreamPath": "Sources/SwiftTerm/CircularList.swift",
+      "upstreamSHA256": "ccb3518edc70d837079dd463b8f4f35cbba3b4dea8c11ed6fada75f407bd6e4d"
+    },
+    "Sources/SwiftTerm/Colors.swift": {
+      "sha256": "2d331935751e6f990fdfa0283090957477c409cf266235cb65ca4f448ddf90b6",
+      "upstreamPath": "Sources/SwiftTerm/Colors.swift",
+      "upstreamSHA256": "2d331935751e6f990fdfa0283090957477c409cf266235cb65ca4f448ddf90b6"
+    },
+    "Sources/SwiftTerm/CsiParameters.swift": {
+      "sha256": "55f62a4d9203791c48a384c07dc6f9a84d872ac9f2cc380c94a4cb02536f4321",
+      "upstreamPath": "Sources/SwiftTerm/CsiParameters.swift",
+      "upstreamSHA256": "55f62a4d9203791c48a384c07dc6f9a84d872ac9f2cc380c94a4cb02536f4321"
+    },
+    "Sources/SwiftTerm/DECPrivateModes.swift": {
+      "sha256": "ef1c6f9a6948b38d781aed846e66123a344625c7f74a3f72fd21436dec1dbf54",
+      "upstreamPath": "Sources/SwiftTerm/DECPrivateModes.swift",
+      "upstreamSHA256": "ef1c6f9a6948b38d781aed846e66123a344625c7f74a3f72fd21436dec1dbf54"
+    },
+    "Sources/SwiftTerm/EmbeddedSupport.swift": {
+      "sha256": "60569fb9f876c83624bbbf011483a38d059c36dda35548b365f411a84e1ba2eb",
+      "upstreamPath": "Sources/SwiftTerm/EmbeddedSupport.swift",
+      "upstreamSHA256": "60569fb9f876c83624bbbf011483a38d059c36dda35548b365f411a84e1ba2eb"
+    },
+    "Sources/SwiftTerm/EscapeSequenceParser.swift": {
+      "sha256": "df5a2d02dbb4e2d600956df5c76b45814bce9449d3a4fd944b22431d18bd73da",
+      "upstreamPath": "Sources/SwiftTerm/EscapeSequenceParser.swift",
+      "upstreamSHA256": "df5a2d02dbb4e2d600956df5c76b45814bce9449d3a4fd944b22431d18bd73da"
+    },
+    "Sources/SwiftTerm/EscapeSequences.swift": {
+      "sha256": "1912103bafb9ec0ae577571eada8597599fce370843d6ab221f6098c2874d30b",
+      "upstreamPath": "Sources/SwiftTerm/EscapeSequences.swift",
+      "upstreamSHA256": "1912103bafb9ec0ae577571eada8597599fce370843d6ab221f6098c2874d30b"
+    },
+    "Sources/SwiftTerm/ExtensionsTerminal.swift": {
+      "sha256": "c04881b93cd02bf271766763378c2ae8491215a59398845c58faa30f7d7b46ff",
+      "upstreamPath": "Sources/SwiftTerm/ExtensionsTerminal.swift",
+      "upstreamSHA256": "c04881b93cd02bf271766763378c2ae8491215a59398845c58faa30f7d7b46ff"
+    },
+    "Sources/SwiftTerm/File.swift": {
+      "sha256": "f9770073060b16c0f494cc1b152c73fe43602b179af63142027b26859b6ae5ee",
+      "upstreamPath": "Sources/SwiftTerm/File.swift",
+      "upstreamSHA256": "f9770073060b16c0f494cc1b152c73fe43602b179af63142027b26859b6ae5ee"
+    },
+    "Sources/SwiftTerm/Generated/SwiftTermBuildInfo.swift": {
+      "sha256": "2e098f2f7857352792231bed21c341d0e313a4570020c565a115ef64865abe38",
+      "upstreamPath": "generated by pinned upstream SwiftTermBuildInfoGenerator",
+      "upstreamSHA256": "a4609b16518b0285dae3b31423048e175504313da4655da2f3e4972a54ae818d"
+    },
+    "Sources/SwiftTerm/Generated/SwiftTermTerminfo.swift": {
+      "sha256": "ca99a1796ed0908ae68ea6b1ff81df0bcb51f8da6c8d4ee8ddafe773106c3108",
+      "upstreamPath": "generated by pinned upstream SwiftTermBuildInfoGenerator",
+      "upstreamSHA256": "ca99a1796ed0908ae68ea6b1ff81df0bcb51f8da6c8d4ee8ddafe773106c3108"
+    },
+    "Sources/SwiftTerm/HangulInput.swift": {
+      "sha256": "b4a0ea6b5c63a483c72d8294ecca54055f98c61a2e83303e8233cf0f91ae0034",
+      "upstreamPath": "Sources/SwiftTerm/HangulInput.swift",
+      "upstreamSHA256": "b4a0ea6b5c63a483c72d8294ecca54055f98c61a2e83303e8233cf0f91ae0034"
+    },
+    "Sources/SwiftTerm/HeadlessTerminal.swift": {
+      "sha256": "b2bff49ae20b8473e0144588185555ed41f960e8e88d0bae5dcf49c047d51a68",
+      "upstreamPath": "Sources/SwiftTerm/HeadlessTerminal.swift",
+      "upstreamSHA256": "b2bff49ae20b8473e0144588185555ed41f960e8e88d0bae5dcf49c047d51a68"
+    },
+    "Sources/SwiftTerm/IOTimerQueue.swift": {
+      "sha256": "aa5c1e4c331adcaf11f89cad185fd42fc4a240b8ab15a9148169179d55e07f7f",
+      "upstreamPath": "Sources/SwiftTerm/IOTimerQueue.swift",
+      "upstreamSHA256": "aa5c1e4c331adcaf11f89cad185fd42fc4a240b8ab15a9148169179d55e07f7f"
+    },
+    "Sources/SwiftTerm/KittyClipboardGrants.swift": {
+      "sha256": "6db21abf877146ae52126c9f9cc6ad8e819aca246a5e6032e24132749339e6f4",
+      "upstreamPath": "Sources/SwiftTerm/KittyClipboardGrants.swift",
+      "upstreamSHA256": "6db21abf877146ae52126c9f9cc6ad8e819aca246a5e6032e24132749339e6f4"
+    },
+    "Sources/SwiftTerm/KittyClipboardProtocol.swift": {
+      "sha256": "90a46d9f45779c8c03e805cdf5b52331ad1c0795b27648cf92a010489396d66c",
+      "upstreamPath": "Sources/SwiftTerm/KittyClipboardProtocol.swift",
+      "upstreamSHA256": "90a46d9f45779c8c03e805cdf5b52331ad1c0795b27648cf92a010489396d66c"
+    },
+    "Sources/SwiftTerm/KittyGraphics.swift": {
+      "sha256": "de3e11d393a045e8fc3c5bd201d345c6ff5ee2b556bffea8cfb6a97501a98baa",
+      "upstreamPath": "Sources/SwiftTerm/KittyGraphics.swift",
+      "upstreamSHA256": "5f7c895626e39355aec1338a73e0db16cff33d0329a4d60cb1683882f2315e93"
+    },
+    "Sources/SwiftTerm/KittyGraphicsSnapshot.swift": {
+      "sha256": "1eccc7f2fc29d6d0458fb6a5be8ceec2a6b88a891cb2fd726f61692a1c998237",
+      "upstreamPath": "Sources/SwiftTerm/KittyGraphicsSnapshot.swift",
+      "upstreamSHA256": "1eccc7f2fc29d6d0458fb6a5be8ceec2a6b88a891cb2fd726f61692a1c998237"
+    },
+    "Sources/SwiftTerm/KittyKeyboardEncoder.swift": {
+      "sha256": "2b383138c0f2589d28a4fcba82f4f8aa7808ed80493f7b167b34c3de788678a5",
+      "upstreamPath": "Sources/SwiftTerm/KittyKeyboardEncoder.swift",
+      "upstreamSHA256": "2b383138c0f2589d28a4fcba82f4f8aa7808ed80493f7b167b34c3de788678a5"
+    },
+    "Sources/SwiftTerm/KittyKeyboardProtocol.swift": {
+      "sha256": "f602320b1700ad25ed35f377141cd27b132f53044c8cc5c8d33028f3af6e1e4f",
+      "upstreamPath": "Sources/SwiftTerm/KittyKeyboardProtocol.swift",
+      "upstreamSHA256": "f602320b1700ad25ed35f377141cd27b132f53044c8cc5c8d33028f3af6e1e4f"
+    },
+    "Sources/SwiftTerm/KittyPlaceholder.swift": {
+      "sha256": "5ba7f18a5b58ff0fba07e345c14346571e854bf260deeb9f636aa82ac465b83d",
+      "upstreamPath": "Sources/SwiftTerm/KittyPlaceholder.swift",
+      "upstreamSHA256": "5ba7f18a5b58ff0fba07e345c14346571e854bf260deeb9f636aa82ac465b83d"
+    },
+    "Sources/SwiftTerm/Line.swift": {
+      "sha256": "6ea349f0df99d9de56f0d9705bb61e45239def6727277d18be65b7fe21b26a08",
+      "upstreamPath": "Sources/SwiftTerm/Line.swift",
+      "upstreamSHA256": "6ea349f0df99d9de56f0d9705bb61e45239def6727277d18be65b7fe21b26a08"
+    },
+    "Sources/SwiftTerm/LocalProcess.swift": {
+      "sha256": "7be01862b8fb9fa3c4724b3cedd98dbe3a58a1877b40171bf008680e93d58fd3",
+      "upstreamPath": "Sources/SwiftTerm/LocalProcess.swift",
+      "upstreamSHA256": "7be01862b8fb9fa3c4724b3cedd98dbe3a58a1877b40171bf008680e93d58fd3"
+    },
+    "Sources/SwiftTerm/Locked.swift": {
+      "sha256": "b5139505a25b3ce274f70102e14883ddc4d4302cb922fbe0f7b16e82c2648858",
+      "upstreamPath": "Sources/SwiftTerm/Locked.swift",
+      "upstreamSHA256": "b5139505a25b3ce274f70102e14883ddc4d4302cb922fbe0f7b16e82c2648858"
+    },
+    "Sources/SwiftTerm/Mac/MacAccessibilityService.swift": {
+      "sha256": "1ff8fa04567b861270655c5faf9245f985082907d2b594346357fd9f61d94495",
+      "upstreamPath": "Sources/SwiftTerm/Mac/MacAccessibilityService.swift",
+      "upstreamSHA256": "1ff8fa04567b861270655c5faf9245f985082907d2b594346357fd9f61d94495"
+    },
+    "Sources/SwiftTerm/Mac/MacCaretView.swift": {
+      "sha256": "7db38858a2c76794439ca686d031606033f7cc3b15389acf21c0f6366344e390",
+      "upstreamPath": "Sources/SwiftTerm/Mac/MacCaretView.swift",
+      "upstreamSHA256": "7db38858a2c76794439ca686d031606033f7cc3b15389acf21c0f6366344e390"
+    },
+    "Sources/SwiftTerm/Mac/MacDebugView.swift": {
+      "sha256": "d8f1a2ff92b762714ca7842f53db2a1cae1ab5e700cce94cad3bbc24cefa7ac6",
+      "upstreamPath": "Sources/SwiftTerm/Mac/MacDebugView.swift",
+      "upstreamSHA256": "d8f1a2ff92b762714ca7842f53db2a1cae1ab5e700cce94cad3bbc24cefa7ac6"
+    },
+    "Sources/SwiftTerm/Mac/MacExtensions.swift": {
+      "sha256": "b565541812ee1ff18ca922e1de68f23fc3e14f50ab165777747185043f8e5391",
+      "upstreamPath": "Sources/SwiftTerm/Mac/MacExtensions.swift",
+      "upstreamSHA256": "b565541812ee1ff18ca922e1de68f23fc3e14f50ab165777747185043f8e5391"
+    },
+    "Sources/SwiftTerm/Mac/MacFindBarView.swift": {
+      "sha256": "ee9a822ada7a32d5ff138b89dc4ba36211dde6cbb9fa97eaae9a5608c4d8c9f9",
+      "upstreamPath": "Sources/SwiftTerm/Mac/MacFindBarView.swift",
+      "upstreamSHA256": "ee9a822ada7a32d5ff138b89dc4ba36211dde6cbb9fa97eaae9a5608c4d8c9f9"
+    },
+    "Sources/SwiftTerm/Mac/MacLocalTerminalView.swift": {
+      "sha256": "9be38df8c8c15ee13df5f0b8933dc517d1ea1b73466f13216bceaddf9e568631",
+      "upstreamPath": "Sources/SwiftTerm/Mac/MacLocalTerminalView.swift",
+      "upstreamSHA256": "9be38df8c8c15ee13df5f0b8933dc517d1ea1b73466f13216bceaddf9e568631"
+    },
+    "Sources/SwiftTerm/Mac/MacTerminalView.swift": {
+      "sha256": "7b14a753d8a1d8dd48fc56da8ff3eab8bc6bbcff153a6a1af9f0d8606005d606",
+      "upstreamPath": "Sources/SwiftTerm/Mac/MacTerminalView.swift",
+      "upstreamSHA256": "7b14a753d8a1d8dd48fc56da8ff3eab8bc6bbcff153a6a1af9f0d8606005d606"
+    },
+    "Sources/SwiftTerm/Mac/TerminalLinkOpening.swift": {
+      "sha256": "f35c2fe031751cc9ed22c7b4c7f1f10dea4e866f72b276adec990ca50190159e",
+      "upstreamPath": "Sources/SwiftTerm/Mac/TerminalLinkOpening.swift",
+      "upstreamSHA256": "f35c2fe031751cc9ed22c7b4c7f1f10dea4e866f72b276adec990ca50190159e"
+    },
+    "Sources/SwiftTerm/Mac/UntrustedTerminalLink.swift": {
+      "sha256": "c84913b3232ac9bb23b6f063596cdb32d310898cfbbaf7a7a3fc1277ab6ecfe0",
+      "upstreamPath": "Sources/SwiftTerm/Mac/UntrustedTerminalLink.swift",
+      "upstreamSHA256": "c84913b3232ac9bb23b6f063596cdb32d310898cfbbaf7a7a3fc1277ab6ecfe0"
+    },
+    "Sources/SwiftTerm/Portable/TerminalKittyPlaceholders.swift": {
+      "sha256": "b8cb3f23f532e6222ced745375c5d89bcc0cfd7ba675681e9789ce9d88bd653c",
+      "upstreamPath": "Sources/SwiftTerm/Portable/TerminalKittyPlaceholders.swift",
+      "upstreamSHA256": "b8cb3f23f532e6222ced745375c5d89bcc0cfd7ba675681e9789ce9d88bd653c"
+    },
+    "Sources/SwiftTerm/Portable/TerminalRasterImage.swift": {
+      "sha256": "264abee1707d61e0a81b45f9e2aca033cf47fb9b0ae435fb2d0b9d8b2c5d9e7f",
+      "upstreamPath": "Sources/SwiftTerm/Portable/TerminalRasterImage.swift",
+      "upstreamSHA256": "264abee1707d61e0a81b45f9e2aca033cf47fb9b0ae435fb2d0b9d8b2c5d9e7f"
+    },
+    "Sources/SwiftTerm/Portable/TerminalRenderSnapshot.swift": {
+      "sha256": "ec283bcbea64832cfc4560a11b88b01ef4487c74506a3ee258d77027a13f52dd",
+      "upstreamPath": "Sources/SwiftTerm/Portable/TerminalRenderSnapshot.swift",
+      "upstreamSHA256": "ec283bcbea64832cfc4560a11b88b01ef4487c74506a3ee258d77027a13f52dd"
+    },
+    "Sources/SwiftTerm/Portable/TerminalViewport.swift": {
+      "sha256": "2e614ac9a873ccb67102f7adbae69602324e330eb24d89c6b86e68b63cd13d0b",
+      "upstreamPath": "Sources/SwiftTerm/Portable/TerminalViewport.swift",
+      "upstreamSHA256": "2e614ac9a873ccb67102f7adbae69602324e330eb24d89c6b86e68b63cd13d0b"
+    },
+    "Sources/SwiftTerm/Portable/WASIHostEvents.swift": {
+      "sha256": "0b9a8d63c8706ccec0a191283cb4df4d1fe254987bb1a6604ede06028c99fb5e",
+      "upstreamPath": "Sources/SwiftTerm/Portable/WASIHostEvents.swift",
+      "upstreamSHA256": "0b9a8d63c8706ccec0a191283cb4df4d1fe254987bb1a6604ede06028c99fb5e"
+    },
+    "Sources/SwiftTerm/Position.swift": {
+      "sha256": "b4a2c90a43e9339461184982af38b2db86d55e75925b6026ed11821ed88cf63e",
+      "upstreamPath": "Sources/SwiftTerm/Position.swift",
+      "upstreamSHA256": "b4a2c90a43e9339461184982af38b2db86d55e75925b6026ed11821ed88cf63e"
+    },
+    "Sources/SwiftTerm/Profiling.swift": {
+      "sha256": "3e6a8f983b664434631a08c90583b9edc3ac0ebf58a07c2ea0a357dbbc243a52",
+      "upstreamPath": "Sources/SwiftTerm/Profiling.swift",
+      "upstreamSHA256": "3e6a8f983b664434631a08c90583b9edc3ac0ebf58a07c2ea0a357dbbc243a52"
+    },
+    "Sources/SwiftTerm/ProgramStatus.swift": {
+      "sha256": "765d90f28ea6f57d1882f186893754f2b37ae8fd9736e80dc0385967e1e5337a",
+      "upstreamPath": "Sources/SwiftTerm/ProgramStatus.swift",
+      "upstreamSHA256": "765d90f28ea6f57d1882f186893754f2b37ae8fd9736e80dc0385967e1e5337a"
+    },
+    "Sources/SwiftTerm/Pty.swift": {
+      "sha256": "2d73363cedda3c3627b3f388e30f41528de35bdf1cd38a885f2da08a191e98f9",
+      "upstreamPath": "Sources/SwiftTerm/Pty.swift",
+      "upstreamSHA256": "2d73363cedda3c3627b3f388e30f41528de35bdf1cd38a885f2da08a191e98f9"
+    },
+    "Sources/SwiftTerm/SearchEngine.swift": {
+      "sha256": "a2d51e904bd6c6f5f216bcf4151c6ec90755170a9d072d742ea1ce6a2129fb9d",
+      "upstreamPath": "Sources/SwiftTerm/SearchEngine.swift",
+      "upstreamSHA256": "a2d51e904bd6c6f5f216bcf4151c6ec90755170a9d072d742ea1ce6a2129fb9d"
+    },
+    "Sources/SwiftTerm/SearchLineCache.swift": {
+      "sha256": "3c0ae93bd72c285e76d6ae847ab178769841fc31d5d1918e06baf2b5dea1d767",
+      "upstreamPath": "Sources/SwiftTerm/SearchLineCache.swift",
+      "upstreamSHA256": "3c0ae93bd72c285e76d6ae847ab178769841fc31d5d1918e06baf2b5dea1d767"
+    },
+    "Sources/SwiftTerm/SearchOptions.swift": {
+      "sha256": "9cdfc81b3549ed0f044191fc5981407058d5599ca154cb869b306694311837a6",
+      "upstreamPath": "Sources/SwiftTerm/SearchOptions.swift",
+      "upstreamSHA256": "9cdfc81b3549ed0f044191fc5981407058d5599ca154cb869b306694311837a6"
+    },
+    "Sources/SwiftTerm/SearchService.swift": {
+      "sha256": "e37f5f2d4521f7b0482596b19fcfc158ba4737f7a7f52c72bb5fdb3d60385809",
+      "upstreamPath": "Sources/SwiftTerm/SearchService.swift",
+      "upstreamSHA256": "e37f5f2d4521f7b0482596b19fcfc158ba4737f7a7f52c72bb5fdb3d60385809"
+    },
+    "Sources/SwiftTerm/SearchState.swift": {
+      "sha256": "08285eca96c766e6af9b4d1d3e17657b96c78ca5981e944066171ec9968838ce",
+      "upstreamPath": "Sources/SwiftTerm/SearchState.swift",
+      "upstreamSHA256": "08285eca96c766e6af9b4d1d3e17657b96c78ca5981e944066171ec9968838ce"
+    },
+    "Sources/SwiftTerm/SelectionService.swift": {
+      "sha256": "cfaa91219554cfe9ac25519a55a34047f003557d64a63cdbd4280d14c3916a25",
+      "upstreamPath": "Sources/SwiftTerm/SelectionService.swift",
+      "upstreamSHA256": "cfaa91219554cfe9ac25519a55a34047f003557d64a63cdbd4280d14c3916a25"
+    },
+    "Sources/SwiftTerm/SemanticPrompt.swift": {
+      "sha256": "dcfb2951aaf35aa745f4faef4cd37e1742a91088140778f6d36fd0bbe408e637",
+      "upstreamPath": "Sources/SwiftTerm/SemanticPrompt.swift",
+      "upstreamSHA256": "dcfb2951aaf35aa745f4faef4cd37e1742a91088140778f6d36fd0bbe408e637"
+    },
+    "Sources/SwiftTerm/SixelDcsHandler.swift": {
+      "sha256": "39b47d5dcec8471afe1539fdd2cd93bab12f7ba1d058717d3ce9137faad5e543",
+      "upstreamPath": "Sources/SwiftTerm/SixelDcsHandler.swift",
+      "upstreamSHA256": "39b47d5dcec8471afe1539fdd2cd93bab12f7ba1d058717d3ce9137faad5e543"
+    },
+    "Sources/SwiftTerm/SyncDebug.swift": {
+      "sha256": "f1f4274329c01405a155f8d37339fa130a2fd0ce4e70e68994b308b5d507bfff",
+      "upstreamPath": "Sources/SwiftTerm/SyncDebug.swift",
+      "upstreamSHA256": "f1f4274329c01405a155f8d37339fa130a2fd0ce4e70e68994b308b5d507bfff"
+    },
+    "Sources/SwiftTerm/Terminal.swift": {
+      "sha256": "a25273abe289aece3fdaf50a1b661a7694fbc6bfe9d35c9ed4102a358b05c794",
+      "upstreamPath": "Sources/SwiftTerm/Terminal.swift",
+      "upstreamSHA256": "a25273abe289aece3fdaf50a1b661a7694fbc6bfe9d35c9ed4102a358b05c794"
+    },
+    "Sources/SwiftTerm/TerminalContentSnapshot.swift": {
+      "sha256": "fc41107b2aaf329f29c051d6a07e30614204e002d1d946bb6d405c0d4564cb35",
+      "upstreamPath": "Sources/SwiftTerm/TerminalContentSnapshot.swift",
+      "upstreamSHA256": "fc41107b2aaf329f29c051d6a07e30614204e002d1d946bb6d405c0d4564cb35"
+    },
+    "Sources/SwiftTerm/TerminalIOPipeline.swift": {
+      "sha256": "c813ee21b960f5c504524237fc161981f057c66fc764afec827790c700a0d446",
+      "upstreamPath": "Sources/SwiftTerm/TerminalIOPipeline.swift",
+      "upstreamSHA256": "c813ee21b960f5c504524237fc161981f057c66fc764afec827790c700a0d446"
+    },
+    "Sources/SwiftTerm/TerminalLock.swift": {
+      "sha256": "35e28556bd1494b9eecfe53a86b343035c0a1329eb7e6067681e451852f67d85",
+      "upstreamPath": "Sources/SwiftTerm/TerminalLock.swift",
+      "upstreamSHA256": "35e28556bd1494b9eecfe53a86b343035c0a1329eb7e6067681e451852f67d85"
+    },
+    "Sources/SwiftTerm/TerminalMouseInput.swift": {
+      "sha256": "85510cd095c4068a04b002abe1ba72f3ae5bcca87148a61c94734fcedddfe1fa",
+      "upstreamPath": "Sources/SwiftTerm/TerminalMouseInput.swift",
+      "upstreamSHA256": "85510cd095c4068a04b002abe1ba72f3ae5bcca87148a61c94734fcedddfe1fa"
+    },
+    "Sources/SwiftTerm/TerminalOptions.swift": {
+      "sha256": "1ffaa32d9511b24cdb0086912489e6b2b5911bcc50f6b035d44d100bb2646c7c",
+      "upstreamPath": "Sources/SwiftTerm/TerminalOptions.swift",
+      "upstreamSHA256": "1ffaa32d9511b24cdb0086912489e6b2b5911bcc50f6b035d44d100bb2646c7c"
+    },
+    "Sources/SwiftTerm/TerminalPaste.swift": {
+      "sha256": "2f243f59fc38388fa02e5389ef7d5b40df42d353c86487163de010bae2da299e",
+      "upstreamPath": "Sources/SwiftTerm/TerminalPaste.swift",
+      "upstreamSHA256": "2f243f59fc38388fa02e5389ef7d5b40df42d353c86487163de010bae2da299e"
+    },
+    "Sources/SwiftTerm/TerminalRowText.swift": {
+      "sha256": "ccb4cdd06fb5520efa02b86c465f6ef6e5695a01c08656204395f4f0e2ea00f6",
+      "upstreamPath": "Sources/SwiftTerm/TerminalRowText.swift",
+      "upstreamSHA256": "ccb4cdd06fb5520efa02b86c465f6ef6e5695a01c08656204395f4f0e2ea00f6"
+    },
+    "Sources/SwiftTerm/TerminalTapPolicy.swift": {
+      "sha256": "7f2a76bb09b64d5cf1fbf274eb26618145f3566a26af9554feda0ab5d049d8ec",
+      "upstreamPath": "Sources/SwiftTerm/TerminalTapPolicy.swift",
+      "upstreamSHA256": "7f2a76bb09b64d5cf1fbf274eb26618145f3566a26af9554feda0ab5d049d8ec"
+    },
+    "Sources/SwiftTerm/TerminalViewSearch.swift": {
+      "sha256": "a3f3fb7467d6816e93c5472bf316a6e7fa35a1aad0a8373dd6d50017340c80db",
+      "upstreamPath": "Sources/SwiftTerm/TerminalViewSearch.swift",
+      "upstreamSHA256": "a3f3fb7467d6816e93c5472bf316a6e7fa35a1aad0a8373dd6d50017340c80db"
+    },
+    "Sources/SwiftTerm/TerminalWebInput.swift": {
+      "sha256": "70b7a0836a64e7aaff74bd3124e0f7cb7332cfcd949270cf3ecdd9eb16df645b",
+      "upstreamPath": "Sources/SwiftTerm/TerminalWebInput.swift",
+      "upstreamSHA256": "70b7a0836a64e7aaff74bd3124e0f7cb7332cfcd949270cf3ecdd9eb16df645b"
+    },
+    "Sources/SwiftTerm/TextInputUTF16.swift": {
+      "sha256": "425c23df1de366296fb435a115a46bc8d0210a1766d733b68a442a69958c5a26",
+      "upstreamPath": "Sources/SwiftTerm/TextInputUTF16.swift",
+      "upstreamSHA256": "425c23df1de366296fb435a115a46bc8d0210a1766d733b68a442a69958c5a26"
+    },
+    "Sources/SwiftTerm/UnicodeWidthData.swift": {
+      "sha256": "1f52565b229bf1f66c0c4eb9cae4bdbf0719c68107e9db0968d437ea9f37caca",
+      "upstreamPath": "Sources/SwiftTerm/UnicodeWidthData.swift",
+      "upstreamSHA256": "1f52565b229bf1f66c0c4eb9cae4bdbf0719c68107e9db0968d437ea9f37caca"
+    },
+    "Sources/SwiftTerm/Utilities.swift": {
+      "sha256": "b65a2313d351eb40946e4fe5c2fc9c2f34043ee70716259fad33dd56c6936715",
+      "upstreamPath": "Sources/SwiftTerm/Utilities.swift",
+      "upstreamSHA256": "b65a2313d351eb40946e4fe5c2fc9c2f34043ee70716259fad33dd56c6936715"
+    },
+    "Sources/SwiftTerm/iOS/SwiftUITerminalView.swift": {
+      "sha256": "23c6b842775b440bc7f57ae5245475021b41b919a82b20dc41e6f05886543072",
+      "upstreamPath": "Sources/SwiftTerm/iOS/SwiftUITerminalView.swift",
+      "upstreamSHA256": "23c6b842775b440bc7f57ae5245475021b41b919a82b20dc41e6f05886543072"
+    },
+    "Sources/SwiftTerm/iOS/iOSAccessoryView.swift": {
+      "sha256": "590a1d55e99a6ac242bc122ab4074d70c42a723a2bc1826b1a3de66a2974d8f2",
+      "upstreamPath": "Sources/SwiftTerm/iOS/iOSAccessoryView.swift",
+      "upstreamSHA256": "590a1d55e99a6ac242bc122ab4074d70c42a723a2bc1826b1a3de66a2974d8f2"
+    },
+    "Sources/SwiftTerm/iOS/iOSCaretView.swift": {
+      "sha256": "7360f47d0458ab4227e55b942c9cbf1c42d774f7f12b57fe47ae6e5a85a518a9",
+      "upstreamPath": "Sources/SwiftTerm/iOS/iOSCaretView.swift",
+      "upstreamSHA256": "7360f47d0458ab4227e55b942c9cbf1c42d774f7f12b57fe47ae6e5a85a518a9"
+    },
+    "Sources/SwiftTerm/iOS/iOSDoubleButton.swift": {
+      "sha256": "242f540f26f74bd484c454ed1ba60b16d35e1e20cc651f6fac2bdc0de4b635fd",
+      "upstreamPath": "Sources/SwiftTerm/iOS/iOSDoubleButton.swift",
+      "upstreamSHA256": "242f540f26f74bd484c454ed1ba60b16d35e1e20cc651f6fac2bdc0de4b635fd"
+    },
+    "Sources/SwiftTerm/iOS/iOSExtensions.swift": {
+      "sha256": "bfb03e1b08faf06f62b263ccc52cff96c37a99a926f16fc4d8cfafa0c1753242",
+      "upstreamPath": "Sources/SwiftTerm/iOS/iOSExtensions.swift",
+      "upstreamSHA256": "bfb03e1b08faf06f62b263ccc52cff96c37a99a926f16fc4d8cfafa0c1753242"
+    },
+    "Sources/SwiftTerm/iOS/iOSKeyboardView.swift": {
+      "sha256": "10ecc0bc1c6ff3096f10f4054bce6e7fb82599de04a5c23e0ed70867b063d024",
+      "upstreamPath": "Sources/SwiftTerm/iOS/iOSKeyboardView.swift",
+      "upstreamSHA256": "10ecc0bc1c6ff3096f10f4054bce6e7fb82599de04a5c23e0ed70867b063d024"
+    },
+    "Sources/SwiftTerm/iOS/iOSTerminalView.swift": {
+      "sha256": "b9076e5a782944dc7864c3e144bad67088c2f8dcf1725883d46cf69be0129ddb",
+      "upstreamPath": "Sources/SwiftTerm/iOS/iOSTerminalView.swift",
+      "upstreamSHA256": "b9076e5a782944dc7864c3e144bad67088c2f8dcf1725883d46cf69be0129ddb"
+    },
+    "Sources/SwiftTerm/iOS/iOSTextInput.swift": {
+      "sha256": "dac131926e65bc7a5020181e321176b19f889b25aa14ba5b01a822e81228c0f7",
+      "upstreamPath": "Sources/SwiftTerm/iOS/iOSTextInput.swift",
+      "upstreamSHA256": "dac131926e65bc7a5020181e321176b19f889b25aa14ba5b01a822e81228c0f7"
+    },
+    "Sources/SwiftTerm/iOS/iOSTextStorage.swift": {
+      "sha256": "39f198d9aee783f133e416e12af1773dee8caad1d218de76cfbbc7b8bcff54dd",
+      "upstreamPath": "Sources/SwiftTerm/iOS/iOSTextStorage.swift",
+      "upstreamSHA256": "39f198d9aee783f133e416e12af1773dee8caad1d218de76cfbbc7b8bcff54dd"
+    },
+    "Upstream/BuildInfoGenerator/BuildInfoGenerator.swift": {
+      "sha256": "ff30c1359fbd8ec1ae8e43dc20366c007b6c5e342e73060921246c0342369cdd",
+      "upstreamPath": "Sources/SwiftTermBuildInfoGenerator/BuildInfoGenerator.swift",
+      "upstreamSHA256": "ff30c1359fbd8ec1ae8e43dc20366c007b6c5e342e73060921246c0342369cdd"
+    },
+    "Upstream/BuildInfoGenerator/TerminfoSource.swift": {
+      "sha256": "340baf55bbf94fd4ea7db600c1d2a646fbb3fb9053a2138afe5432ce28dd75f1",
+      "upstreamPath": "Sources/SwiftTermBuildInfoGenerator/TerminfoSource.swift",
+      "upstreamSHA256": "340baf55bbf94fd4ea7db600c1d2a646fbb3fb9053a2138afe5432ce28dd75f1"
+    },
+    "Upstream/BuildInfoGenerator/XtgettcapTableGenerator.swift": {
+      "sha256": "02467e6425e37418c0a0f079dfcb193b88443d686079670cafedd720162fad0f",
+      "upstreamPath": "Sources/SwiftTermBuildInfoGenerator/XtgettcapTableGenerator.swift",
+      "upstreamSHA256": "02467e6425e37418c0a0f079dfcb193b88443d686079670cafedd720162fad0f"
+    },
+    "Upstream/BuildInfoPlugin.swift": {
+      "sha256": "f687340542eeea5a4a3eb596b137aebc269460281a67b3105b37f2604ab02eef",
+      "upstreamPath": "Plugins/SwiftTermBuildInfoPlugin/plugin.swift",
+      "upstreamSHA256": "f687340542eeea5a4a3eb596b137aebc269460281a67b3105b37f2604ab02eef"
+    },
+    "Upstream/Generated/SwiftTermBuildInfo.swift": {
+      "sha256": "a4609b16518b0285dae3b31423048e175504313da4655da2f3e4972a54ae818d",
+      "upstreamPath": "generated by pinned upstream SwiftTermBuildInfoGenerator",
+      "upstreamSHA256": "a4609b16518b0285dae3b31423048e175504313da4655da2f3e4972a54ae818d"
+    },
+    "Upstream/Generated/SwiftTermTerminfo.swift": {
+      "sha256": "ca99a1796ed0908ae68ea6b1ff81df0bcb51f8da6c8d4ee8ddafe773106c3108",
+      "upstreamPath": "generated by pinned upstream SwiftTermBuildInfoGenerator",
+      "upstreamSHA256": "ca99a1796ed0908ae68ea6b1ff81df0bcb51f8da6c8d4ee8ddafe773106c3108"
+    },
+    "Upstream/Package.swift": {
+      "sha256": "448fef1d90cfb8387efb3029709e38c9943b7e0795eeea6f5958337422d27422",
+      "upstreamPath": "Package.swift",
+      "upstreamSHA256": "448fef1d90cfb8387efb3029709e38c9943b7e0795eeea6f5958337422d27422"
+    },
+    "Upstream/swifterm-terminfo": {
+      "sha256": "7819298c1e79b7ba292960fbab41d6604240cf9111f7f3617b775701e008276b",
+      "upstreamPath": "swifterm-terminfo",
+      "upstreamSHA256": "7819298c1e79b7ba292960fbab41d6604240cf9111f7f3617b775701e008276b"
+    }
+  },
+  "selection": "All Sources/SwiftTerm Swift files except Documentation.docc; includes upstream platform-guarded Mac sources because MacAccessibilityService is shared with iOS. Deterministic generated files added. No examples, executables, caches or .git.",
+  "upstreamRevision": "a183c15b52858530a17de57dcc72b93eeebc9857",
+  "upstreamURL": "https://github.com/migueldeicaza/SwiftTerm"
+}

@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+project_dir="$PWD"
+script_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+cd "$script_dir/../bridge"
+exec python3 -m helm_remote.mcp --project "$project_dir" "$@"
