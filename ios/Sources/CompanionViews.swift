@@ -17,7 +17,7 @@ struct AIConsentView: View {
                     Button("Allow AI sharing on this computer", action: allow).buttonStyle(.borderedProminent).accessibilityIdentifier("allowAISharing")
                     Button("Cancel", role: .cancel) { dismiss() }
                 }.padding(24)
-            }.navigationTitle("AI sharing").navigationBarTitleDisplayMode(.inline)
+            }.helmConsole().navigationTitle("AI sharing").navigationBarTitleDisplayMode(.inline)
         }
     }
 }
@@ -31,7 +31,7 @@ struct MoreView: View {
             NavigationLink(value: MoreDestination.projects) { Label("Projects", systemImage: "square.stack.3d.up") }
             NavigationLink(value: MoreDestination.inbox) { Label("Inbox", systemImage: "tray"); Spacer(); if !model.pending.isEmpty { Text("\(model.pending.count)").foregroundStyle(.secondary) } }.accessibilityIdentifier("moreInbox")
             NavigationLink(value: MoreDestination.settings) { Label("Settings", systemImage: "slider.horizontal.3") }
-        }.navigationTitle("More")
+        }.listRowSpacing(8).helmConsole().navigationTitle("More").navigationBarTitleDisplayMode(.inline)
             .navigationDestination(for: MoreDestination.self) { destination in
                 switch destination {
                 case .overview: OverviewView()
@@ -45,28 +45,53 @@ struct MoreView: View {
 struct DevicesView: View {
     @EnvironmentObject var model: AppModel
     var body: some View {
-        List {
-            if model.demo { Section { Label("Demo · sample devices only", systemImage: "eye") } }
-            Section("Your computers") {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 16) {
+                if model.demo { Label("Demo · sample devices only", systemImage: "eye").font(.caption).foregroundStyle(HelmStyle.gold) }
+                ConsoleHeading(title: "Registered computers", icon: "network")
                 if let error = model.deviceError { Text(error).foregroundStyle(HelmStyle.gold) }
-                if model.devices.isEmpty && model.deviceError == nil { Text("No computers configured. Add a device in the bridge’s private configuration.").foregroundStyle(.secondary) }
-                ForEach(model.devices) { device in
-                    VStack(alignment: .leading, spacing: 9) {
-                        HStack { Label(device.name, systemImage: device.platform == "macos" ? "laptopcomputer" : "desktopcomputer").font(.headline); Spacer(); StateTag(state: device.status) }
-                        Text("\(device.platform.capitalized) · \(device.transport == "ssh" ? "Trusted SSH" : "Bridge computer")").font(.caption).foregroundStyle(.secondary)
-                        Text([device.capabilities.tasks ? "Task worker registered" : "No task worker registered", device.capabilities.terminal ? "Terminal enabled" : "Terminal disabled", device.capabilities.codex ? "Codex available" : "Codex unavailable"].joined(separator: " · ")).font(.footnote)
-                        if device.capabilities.tasks && device.status == "offline" { Text("Tasks can queue while this computer is offline.").font(.caption).foregroundStyle(HelmStyle.gold) }
-                        if device.lastSeen > 0 { Text("Worker last seen \(Date(timeIntervalSince1970: device.lastSeen).formatted())").font(.caption).foregroundStyle(.secondary) }
-                        Text("ID: \(device.id)").font(.caption.monospaced()).foregroundStyle(.secondary)
-                    }.padding(.vertical, 6)
+                if model.devices.isEmpty && model.deviceError == nil {
+                    EmptyPanel(title: "No computers configured", text: "Add a device to your bridge to make it available here.", icon: "desktopcomputer")
                 }
-            }
-            Section {
-                NavigationLink { ConnectionsView() } label: { Label("Connections & setup", systemImage: "point.3.connected.trianglepath.dotted") }
-                Link("Pairing and computer setup guide", destination: PublicHelp.setup)
-                Text("Discovery finds network peers. Only devices explicitly configured on your bridge can accept work. Device status does not prove terminal SSH access.").font(.footnote).foregroundStyle(.secondary)
-            }
-        }.navigationTitle("Devices").refreshable { await model.refreshDevices() }.task { await model.refreshDevices() }
+                ForEach(model.devices) { device in
+                    Panel {
+                        VStack(alignment: .leading, spacing: 12) {
+                            HStack(alignment: .top) {
+                                Label(device.name, systemImage: device.platform == "macos" ? "laptopcomputer" : "desktopcomputer").font(.headline)
+                                Spacer(minLength: 8)
+                                StateTag(state: device.status)
+                            }
+                            Text("\(device.platform.capitalized) / \(device.transport == "ssh" ? "Trusted SSH" : "Bridge computer")")
+                                .font(.caption.monospaced()).foregroundStyle(.secondary)
+                            Divider().overlay(HelmStyle.rule)
+                            VStack(alignment: .leading, spacing: 8) {
+                                capability("Task worker", enabled: device.capabilities.tasks, yes: "Registered", no: "Not registered")
+                                capability("Terminal", enabled: device.capabilities.terminal, yes: "Enabled", no: "Disabled")
+                                capability("Codex", enabled: device.capabilities.codex, yes: "Available", no: "Unavailable")
+                            }
+                            if device.capabilities.tasks && device.status == "offline" { Text("Tasks can queue while this computer is offline.").font(.caption).foregroundStyle(HelmStyle.gold) }
+                            if device.lastSeen > 0 { Text("Worker last seen \(Date(timeIntervalSince1970: device.lastSeen).formatted())").font(.caption).foregroundStyle(.secondary) }
+                            Text(device.id).font(.caption.monospaced()).foregroundStyle(.secondary)
+                        }
+                    }
+                }
+                Panel {
+                    VStack(alignment: .leading, spacing: 14) {
+                        NavigationLink { ConnectionsView() } label: { Label("Connections & setup", systemImage: "point.3.connected.trianglepath.dotted").frame(minHeight: 44) }
+                        Link("Pairing and computer setup guide", destination: PublicHelp.setup).frame(minHeight: 44)
+                        Text("Only configured devices can accept work. Device status does not verify terminal SSH access.").font(.footnote).foregroundStyle(.secondary)
+                    }
+                }
+            }.padding(16).frame(maxWidth: 760)
+        }.helmConsole().navigationTitle("Devices").navigationBarTitleDisplayMode(.inline)
+            .refreshable { await model.refreshDevices() }.task { await model.refreshDevices() }
+    }
+    private func capability(_ title: String, enabled: Bool, yes: String, no: String) -> some View {
+        HStack(alignment: .firstTextBaseline) {
+            Text(title).font(.subheadline)
+            Spacer(minLength: 12)
+            Text(enabled ? yes : no).font(.caption.monospaced()).foregroundStyle(enabled ? HelmStyle.signal : .secondary)
+        }
     }
 }
 struct ConnectionsView: View {
@@ -88,7 +113,7 @@ struct ConnectionsView: View {
                     }
                 }
                 Text("These switches allow bounded read-only checks through the installed clients on your bridge computer. They do not sign in, install software, enroll peers or change network policy.").font(.footnote).foregroundStyle(.secondary)
-            }
+            }.listRowBackground(HelmStyle.surface)
             Section("Connect with NetBird") {
                 setupStep(1, "Install on both devices", "Install NetBird on your iPhone and the bridge computer using its official apps.", "iphone.and.arrow.forward")
                 setupStep(2, "Sign in to the same network", "Use the same NetBird network on both. Approve devices and configure network access in NetBird yourself.", "person.2")
@@ -113,7 +138,7 @@ struct ConnectionsView: View {
                 Link("GitHub CLI documentation", destination: URL(string: "https://cli.github.com/manual/gh_auth_login")!)
             }
             Section { Link("Computer and worker setup", destination: PublicHelp.setup) }
-        }.navigationTitle("Connections").refreshable { await model.refreshDevices() }
+        }.helmConsole().navigationTitle("Connections").navigationBarTitleDisplayMode(.inline).refreshable { await model.refreshDevices() }
     }
     private func setupStep(_ number: Int, _ title: String, _ detail: String, _ icon: String) -> some View {
         HStack(alignment: .top, spacing: 14) {
@@ -124,17 +149,22 @@ struct ConnectionsView: View {
 }
 struct NoticesView: View {
     var body: some View {
-        ScrollView { Text((Bundle.main.url(forResource: "SwiftTerm-LICENSE", withExtension: "txt").flatMap { try? String(contentsOf: $0, encoding: .utf8) }) ?? "License resource unavailable.").font(.footnote.monospaced()).textSelection(.enabled).padding() }.navigationTitle("Third-party notices")
+        ScrollView { Text((Bundle.main.url(forResource: "SwiftTerm-LICENSE", withExtension: "txt").flatMap { try? String(contentsOf: $0, encoding: .utf8) }) ?? "License resource unavailable.").font(.footnote.monospaced()).textSelection(.enabled).padding() }.helmConsole().navigationTitle("Third-party notices")
     }
 }
 struct PairingGuideView: View {
     var body: some View {
         List {
-            Section("1 · Prepare your computer") { Text("Install the standalone bridge on a Mac or Linux computer you own. Configure an existing project folder. A desktop IDE is optional."); Link("Open computer setup guide", destination: PublicHelp.setup) }
+            Section("1 · Prepare your computer") {
+                Link("Download Command Helm Desktop", destination: PublicHelp.desktop).accessibilityIdentifier("downloadDesktopGuide")
+                Text("The desktop IDE is a Mac preview for Apple Silicon. It is development-signed and not notarized; read its release notes before installing.").font(.footnote).foregroundStyle(.secondary)
+                Text("Install the standalone bridge on a Mac or Linux computer you own and configure a project folder. The desktop IDE is optional; both apps connect to this bridge.")
+                Link("Open computer setup guide", destination: PublicHelp.setup)
+            }.listRowBackground(HelmStyle.surface)
             Section("2 · Make it reachable") { Text("Keep the computer awake. Start on the same private network, or set up NetBird on both devices yourself.") }
             Section("3 · Pair securely") { Text("Display the bridge pairing information privately on your computer. Enter its HTTPS address, private pairing key and certificate fingerprint here, or open its private pairing link. Compare the address and fingerprint before connecting. Never share that key or link.") }
             Section("4 · Choose your work") { Text("Check Devices for registered workers and enabled terminals. Queued Codex tasks require a worker. Interactive shell and Codex terminals require tmux on the execution computer. Provider sign-in stays on your computer.") }
             Section { Text("Sample mode works offline and sends no work. No Helm account or subscription is required."); Link("Privacy", destination: PublicHelp.privacy); Link("Support", destination: PublicHelp.support) }
-        }.navigationTitle("Get started")
+        }.helmConsole().navigationTitle("Get started").navigationBarTitleDisplayMode(.inline)
     }
 }

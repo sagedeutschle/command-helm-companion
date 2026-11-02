@@ -4,7 +4,9 @@ Keep your computers within reach. Command Helm lets you send a task from your iP
 
 The companion connects to a bridge you run on your own Mac or Linux computer. It does not require the Command Helm desktop IDE. Start with one computer; add more when you need them.
 
-The App Store release is being prepared. Its download link will appear here once Apple makes the app available. You can build the app and run the bridge from this source today; see [build instructions](CONTRIBUTING.md).
+[Get Command Helm on the App Store](https://apps.apple.com/app/id6829226962) · [Download the desktop IDE preview](https://github.com/sagedeutschle/command-helm-desktop/releases) · [Build from source](CONTRIBUTING.md).
+
+The published iOS version is 1.0.0. This source includes the upcoming 1.0.1 console-design and desktop-setup update; App Store delivery requires a separate build and Apple review.
 
 - Send durable tasks to a configured worker and read its saved report.
 - Reconnect to persistent shell and Codex terminal sessions.

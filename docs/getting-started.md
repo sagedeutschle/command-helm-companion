@@ -1,6 +1,14 @@
 # Start with one computer
 
-Command Helm connects your phone to a bridge you control. The desktop IDE is optional.
+Command Helm connects your phone to a bridge you control.
+
+## Get Command Helm Desktop
+
+**[Download Command Helm Desktop from GitHub](https://github.com/sagedeutschle/command-helm-desktop/releases)** on your computer. The first desktop preview supports Apple Silicon Macs and is development-signed, not notarized; read the release notes before installing. Open Command Desk → **Connect your phone & computer** for the [IDE connection guide](https://github.com/sagedeutschle/command-helm-desktop/blob/main/docs/CONNECT.md).
+
+The desktop IDE and phone use the same private bridge for tasks and reports. Installing the IDE does not configure a bridge automatically. You can also use the phone with the standalone bridge without installing the IDE.
+
+## Pair your phone
 
 1. Install and start the bridge using the [computer setup guide](backend-setup.md). Choose a project folder that you intend to work in.
 2. Make the bridge reachable from your phone. Start on the same local network, or use your own private network such as [NetBird](netbird.md). Do not forward a router port just to complete setup.

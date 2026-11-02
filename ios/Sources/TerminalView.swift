@@ -32,7 +32,7 @@ struct TerminalsView: View {
                 Text("Sessions run on the selected computer. Leaving this view detaches the phone; it does not stop the session. Shell input can run commands on that computer.").font(.footnote).foregroundStyle(.secondary)
                 if let notice { Text(notice).font(.footnote).foregroundStyle(HelmStyle.gold) }
                 if let error = model.terminalError { Text(error).font(.footnote).foregroundStyle(HelmStyle.gold) }
-            }
+            }.listRowBackground(HelmStyle.surface)
             Section("Persistent sessions") {
                 if model.sessions.isEmpty { Text("No sessions yet. Reconnect here after leaving the app.").foregroundStyle(.secondary) }
                 ForEach(model.sessions) { session in
@@ -46,7 +46,7 @@ struct TerminalsView: View {
                     }.swipeActions { if !model.demo { Button("Close session", role: .destructive) { confirmClose = session } } }
                 }
             }
-        }.navigationTitle("Terminal")
+        }.helmConsole().navigationTitle("Terminal").navigationBarTitleDisplayMode(.inline)
             .task { await model.refreshDevices(); await model.refreshTerminals(); if deviceID.isEmpty { deviceID = available.first?.id ?? "" } }
             .onChange(of: deviceID) { _, _ in kind = "shell"; restoreStartID() }
             .onChange(of: kind) { _, _ in restoreStartID() }
@@ -221,7 +221,7 @@ struct TerminalScreen: View {
                 if let replayNotice = runtime.replayNotice { Text(replayNotice).font(.caption).foregroundStyle(HelmStyle.gold) }
                 if let closeNotice { Text(closeNotice).font(.caption).foregroundStyle(HelmStyle.gold) }
                 if runtime.uncertain { Button("I inspected the terminal · resume input") { inspect = true }.font(.footnote) }
-            }.frame(maxWidth: .infinity, alignment: .leading).padding(10)
+            }.frame(maxWidth: .infinity, alignment: .leading).padding(12).background(HelmStyle.surface)
             NativeTerminal(runtime: runtime, fontSize: typeSize.isAccessibilitySize ? 20 : 14).accessibilityIdentifier("nativeTerminal")
             ScrollView(.horizontal) {
                 HStack(spacing: 12) {
@@ -235,9 +235,9 @@ struct TerminalScreen: View {
                     control("→", bytes: [27,91,67], label: "Right arrow")
                     Button("Keyboard") { _ = runtime.view?.becomeFirstResponder() }.accessibilityLabel("Show terminal keyboard")
                     Button("Hide keyboard") { _ = runtime.view?.resignFirstResponder() }
-                }.buttonStyle(.bordered).padding(8)
-            }.disabled(runtime.demo || runtime.uncertain)
-        }.navigationTitle(runtime.session.title).navigationBarTitleDisplayMode(.inline)
+                }.buttonStyle(.bordered).buttonBorderShape(.roundedRectangle(radius: 3)).font(.callout.monospaced()).padding(8)
+            }.background(HelmStyle.surface).disabled(runtime.demo || runtime.uncertain)
+        }.helmConsole().navigationTitle(runtime.session.title).navigationBarTitleDisplayMode(.inline)
             .task(id: "\(scenePhase)-\(reconnect)") { if scenePhase == .active { await runtime.run() } else { runtime.stop() } }
             .onDisappear { runtime.stop() }
             .toolbar {
@@ -267,7 +267,8 @@ private struct NativeTerminal: UIViewRepresentable {
     func makeCoordinator() -> Coordinator { Coordinator(runtime) }
     func makeUIView(context: Context) -> SwiftTerm.TerminalView {
         let view = SwiftTerm.TerminalView(frame: .zero, font: .monospacedSystemFont(ofSize: fontSize, weight: .regular), options: TerminalOptions(kittyGraphics: .init(storageLimitBytesPerScreen: 0)))
-        view.nativeBackgroundColor = .black; view.nativeForegroundColor = .white
+        view.nativeBackgroundColor = UIColor(red: 0.025, green: 0.045, blue: 0.055, alpha: 1)
+        view.nativeForegroundColor = UIColor(red: 0.87, green: 0.94, blue: 0.93, alpha: 1)
         view.terminalDelegate = context.coordinator
         runtime.attach(view)
         return view

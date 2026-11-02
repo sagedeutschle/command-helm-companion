@@ -13,23 +13,7 @@
   },
   {
     "path": "README.md",
-    "sha256": "b1ff08c016fd6d757689bdbb06be66e4c5d8cc9458fc37deb8c8027513d79ded"
-  },
-  {
-    "path": "docs/getting-started.md",
-    "sha256": "7c33663eae5c4aa356da7e29fff11f6c757ac1398d5c663549cf94b1d7bbe27e"
-  },
-  {
-    "path": "docs/netbird.md",
-    "sha256": "85c567390fe9ee8b57af3b22f8ebf6b79535db1c503c49b750bacf552895e811"
-  },
-  {
-    "path": "docs/privacy.md",
-    "sha256": "c62ece8a185a1ac7b41427be3839cf89a4c95e213e40af32802beb40a0ffca2f"
-  },
-  {
-    "path": "docs/support.md",
-    "sha256": "c6a90802a85dbff5aedee0f41799036d793927d6200585bdb044e0f33cd316ba"
+    "sha256": "fe8dad52cb9c2c25f9fb9c9ebd3c62edda7490e73b2ffad648ca660821a0a7f5"
   },
   {
     "path": "bridge/helm_remote/collector.py",
@@ -148,6 +132,50 @@
     "sha256": "081d1ea0c2f5f58b6c6381d06d50f668f3e84c9c6d99890e094f9d52e1cdbc1b"
   },
   {
+    "path": "docs/backend-setup.md",
+    "sha256": "d31485bc183887cf9b7d8856d24cb20b5183c281a2fe8d35bf0ae54eb3f853a2"
+  },
+  {
+    "path": "docs/getting-started.md",
+    "sha256": "90e40f24ee49e39472f984d1e87b86f5fa54843d337db9f7f3f22d14e1ae8ceb"
+  },
+  {
+    "path": "docs/netbird.md",
+    "sha256": "85c567390fe9ee8b57af3b22f8ebf6b79535db1c503c49b750bacf552895e811"
+  },
+  {
+    "path": "docs/privacy.md",
+    "sha256": "c62ece8a185a1ac7b41427be3839cf89a4c95e213e40af32802beb40a0ffca2f"
+  },
+  {
+    "path": "docs/support.md",
+    "sha256": "c6a90802a85dbff5aedee0f41799036d793927d6200585bdb044e0f33cd316ba"
+  },
+  {
+    "path": "ios/Package.resolved",
+    "sha256": "0fdf624e6819aaba238eaf50ff3a1128aa9c4eaeedc927a18c2a4cda84059e59"
+  },
+  {
+    "path": "ios/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+    "sha256": "259db350781401352bf13782a437a89449362240d5a64a06e1db814ae43d3342"
+  },
+  {
+    "path": "ios/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json",
+    "sha256": "6ad2c5c3bbcf972c7f02d217d6afcac3f24a10e30510c7e2d06c582371ed9d22"
+  },
+  {
+    "path": "ios/Resources/Assets.xcassets/Contents.json",
+    "sha256": "10e3b5dc202f1cd9fad1f688c8fc9fe9e9669bf3f8295e67d216b10fd99b6f49"
+  },
+  {
+    "path": "ios/Resources/PrivacyInfo.xcprivacy",
+    "sha256": "edf1a81e6e6035129a902e49ce6560d0359beed0642678fcef73bd17001c235a"
+  },
+  {
+    "path": "ios/Resources/SwiftTerm-LICENSE.txt",
+    "sha256": "b64a677c3f0796f04320483c8ade4a59c593c086df33cc741b34a8b65c583edd"
+  },
+  {
     "path": "ios/Sources/App.swift",
     "sha256": "f2ccb604f259b3a51419d8d1a96fcfcc25d7b8227a5d10aa089db04b84e3eb33"
   },
@@ -161,11 +189,15 @@
   },
   {
     "path": "ios/Sources/CompanionViews.swift",
-    "sha256": "80f2028cd892f302465261a0c2b4d0bf8f98f98750814dffa0cc5e7fe914c914"
+    "sha256": "5807833bede71209126a552c4bf088ba55d7ee5e30d6d1ddde619590f6bfad32"
+  },
+  {
+    "path": "ios/Sources/ConsoleStyle.swift",
+    "sha256": "b93ab9f179b7482eb57f76cd9e33d2097d5b6eda9211dfa24265e666c55a04a6"
   },
   {
     "path": "ios/Sources/DeviceModels.swift",
-    "sha256": "56157ebcc9355a4d4e203de3e3263e4aa98d5ad06141dd2266977b5e2c34e012"
+    "sha256": "a029cfc0c0b6dcb5fbb6cbf94e683d4a9d631f8471892619e49b9433de9ccd16"
   },
   {
     "path": "ios/Sources/Models.swift",
@@ -177,7 +209,7 @@
   },
   {
     "path": "ios/Sources/TasksView.swift",
-    "sha256": "2e4fce2368f17d188ff5575a9584c016847fe74c5deebc4206f8abecb194ebee"
+    "sha256": "7bd637e96c1d9a7275b391003066a95d1a88cbb2599eaa8d9f07d77a79e35858"
   },
   {
     "path": "ios/Sources/TerminalModels.swift",
@@ -185,11 +217,11 @@
   },
   {
     "path": "ios/Sources/TerminalView.swift",
-    "sha256": "7c381b297aba9f34b7ef121b0b0a3b27675096775bdef76278b4c4f56ff921ef"
+    "sha256": "ed30612e3b8dbe032ddc0a1bbc67bdcf7a6a67042a12d203a4bf1e917dd84904"
   },
   {
     "path": "ios/Sources/Views.swift",
-    "sha256": "1eaea9c154c309e8bc032afc5b8996487a95d1b8200150f509d295ef137aa26e"
+    "sha256": "41c449fd8e2dcb7b3ad1ecbe90a23f66af8179cf2cd5346ed236eb23ccf2d1ad"
   },
   {
     "path": "ios/Tests/BridgeIntegrationTests.swift",
@@ -221,27 +253,11 @@
   },
   {
     "path": "ios/UITests/RemoteUITests.swift",
-    "sha256": "94a5e140a1d712a10081a6ab0f08b4c1722026e2f5243a7c5aea85df27391105"
+    "sha256": "bd9aaa90206380406e89002e2cd58a7c40aec6f568481c2a30d7b74ff4d5a589"
   },
   {
-    "path": "ios/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
-    "sha256": "259db350781401352bf13782a437a89449362240d5a64a06e1db814ae43d3342"
-  },
-  {
-    "path": "ios/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json",
-    "sha256": "6ad2c5c3bbcf972c7f02d217d6afcac3f24a10e30510c7e2d06c582371ed9d22"
-  },
-  {
-    "path": "ios/Resources/Assets.xcassets/Contents.json",
-    "sha256": "10e3b5dc202f1cd9fad1f688c8fc9fe9e9669bf3f8295e67d216b10fd99b6f49"
-  },
-  {
-    "path": "ios/Resources/PrivacyInfo.xcprivacy",
-    "sha256": "edf1a81e6e6035129a902e49ce6560d0359beed0642678fcef73bd17001c235a"
-  },
-  {
-    "path": "ios/Resources/SwiftTerm-LICENSE.txt",
-    "sha256": "b64a677c3f0796f04320483c8ade4a59c593c086df33cc741b34a8b65c583edd"
+    "path": "ios/Vendor/SwiftTerm/DOWNSTREAM.patch",
+    "sha256": "c8bfe375cec8e54e2bc0de79e2266f092c3dd952f1e1d3502a6445786293ab57"
   },
   {
     "path": "ios/Vendor/SwiftTerm/LICENSE",
@@ -250,6 +266,14 @@
   {
     "path": "ios/Vendor/SwiftTerm/Package.swift",
     "sha256": "5f34ab3a843078ee599937e1851d593e918e355cc4cd851eb3d390596f691426"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/README.md",
+    "sha256": "b55c479458d0b9c0de7556b32c65c80d8549795ad6a37b23e8c50d25a9514ce9"
+  },
+  {
+    "path": "ios/Vendor/SwiftTerm/SOURCE-MANIFEST.json",
+    "sha256": "63351088df9ebf151a60f1c6994e7640276bc9101b700f9c1baa717cc0a0f040"
   },
   {
     "path": "ios/Vendor/SwiftTerm/Sources/SwiftTerm/Apple/AppleKittyClipboard.swift",
@@ -752,36 +776,20 @@
     "sha256": "7819298c1e79b7ba292960fbab41d6604240cf9111f7f3617b775701e008276b"
   },
   {
-    "path": "ios/Vendor/SwiftTerm/README.md",
-    "sha256": "b55c479458d0b9c0de7556b32c65c80d8549795ad6a37b23e8c50d25a9514ce9"
-  },
-  {
-    "path": "ios/Vendor/SwiftTerm/DOWNSTREAM.patch",
-    "sha256": "c8bfe375cec8e54e2bc0de79e2266f092c3dd952f1e1d3502a6445786293ab57"
-  },
-  {
-    "path": "ios/Vendor/SwiftTerm/SOURCE-MANIFEST.json",
-    "sha256": "63351088df9ebf151a60f1c6994e7640276bc9101b700f9c1baa717cc0a0f040"
-  },
-  {
     "path": "ios/Vendor/SwiftTerm/verify-source.py",
     "sha256": "409af26d995832d17265e754239891a13084f057dfdd54b9ced111f7f27178db"
   },
   {
     "path": "ios/project.yml",
-    "sha256": "6954193b4ea6559b6e7ea5f0c4414b1c2f688796a7093b51153fa4cc576e7a45"
-  },
-  {
-    "path": "ios/Package.resolved",
-    "sha256": "0fdf624e6819aaba238eaf50ff3a1128aa9c4eaeedc927a18c2a4cda84059e59"
-  },
-  {
-    "path": "scripts/helm-bridge",
-    "sha256": "d3592f3adde303ddda7585895ab00555b952b5c5d4fb330969f86cd6dcf79b37"
+    "sha256": "7115a2ab28083f2754077047663ec1a9fd35c61ddee203adc7f23c260eb70e63"
   },
   {
     "path": "scripts/helm-agent",
     "sha256": "5d3674dc1af4df9b91d4a5eafd85831a0c5da923eb45289c0650ecc6a1ed9234"
+  },
+  {
+    "path": "scripts/helm-bridge",
+    "sha256": "d3592f3adde303ddda7585895ab00555b952b5c5d4fb330969f86cd6dcf79b37"
   },
   {
     "path": "scripts/mcp",
@@ -790,9 +798,5 @@
   {
     "path": "scripts/test-ios.py",
     "sha256": "47145f1e3da0d92fd64cb3f0fac81832ca55df7ba06ed9f8414bd51504ebc26b"
-  },
-  {
-    "path": "docs/backend-setup.md",
-    "sha256": "d31485bc183887cf9b7d8856d24cb20b5183c281a2fe8d35bf0ae54eb3f853a2"
   }
 ]

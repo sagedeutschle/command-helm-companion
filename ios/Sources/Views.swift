@@ -1,45 +1,5 @@
 import SwiftUI
 
-enum HelmStyle {
-    static let background = Color(red: 0.025, green: 0.025, blue: 0.03)
-    static let surface = Color(red: 0.075, green: 0.065, blue: 0.07)
-    static let accent = Color(red: 1.0, green: 0.24, blue: 0.29)
-    static let gold = Color(red: 1.0, green: 0.40, blue: 0.43)
-    static func color(_ state: String) -> Color {
-        switch state {
-        case "waiting", "pending", "queued", "interrupted": return gold
-        case "working", "running", "completed", "finished", "delivered": return accent
-        case "failed": return .red
-        case "offline": return gold
-        default: return .secondary
-        }
-    }
-    static func label(_ state: String) -> String {
-        switch state {
-        case "working": return "In progress"
-        case "waiting": return "Needs you"
-        case "finished": return "Finished"
-        case "stale": return "No recent signal"
-        case "offline": return "Offline"
-        case "quiet": return "No projects"
-        default: return state.capitalized
-        }
-    }
-}
-struct Panel<Content: View>: View {
-    @ViewBuilder let content: Content
-    var body: some View {
-        content.padding(18).frame(maxWidth: .infinity, alignment: .leading)
-            .background(HelmStyle.surface, in: RoundedRectangle(cornerRadius: 22))
-            .overlay(RoundedRectangle(cornerRadius: 22).strokeBorder(.white.opacity(0.055)))
-    }
-}
-struct StateTag: View {
-    let state: String
-    var body: some View {
-        HStack(spacing: 5) { Circle().fill(HelmStyle.color(state)).frame(width: 6, height: 6); Text(HelmStyle.label(state)).font(.caption.weight(.medium)) }.foregroundStyle(HelmStyle.color(state))
-    }
-}
 struct RootView: View {
     @EnvironmentObject var model: AppModel
     var body: some View {
@@ -66,16 +26,18 @@ struct PairView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 26) {
-                    Image(systemName: "safari").font(.system(size: 64, weight: .ultraLight)).foregroundStyle(HelmStyle.accent).padding(.top, 30)
-                    VStack(alignment: .leading, spacing: 10) {
-                        Text("COMMAND HELM").font(.caption.monospaced().weight(.semibold)).tracking(4).foregroundStyle(HelmStyle.accent)
-                        Text("Your projects.\nWithin reach.").font(.largeTitle.weight(.semibold))
-                        Text("Send Codex work to your computers, read the reports, and see where your agents need you.").foregroundStyle(.secondary)
-                    }
+                VStack(alignment: .leading, spacing: 18) {
+                    HStack(spacing: 14) {
+                        Image(systemName: "scope").font(.system(size: 32, weight: .light)).foregroundStyle(HelmStyle.accent).accessibilityHidden(true)
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("COMMAND HELM").font(.headline.monospaced()).tracking(2)
+                            Text("Connect your computer").font(.subheadline).foregroundStyle(.secondary)
+                        }
+                    }.padding(.vertical, 8)
+                    DesktopDownloadPanel()
                     Panel {
                         VStack(alignment: .leading, spacing: 16) {
-                            Text("Connect your bridge").font(.headline)
+                            ConsoleHeading(title: "Bridge pairing", icon: "link")
                             TextField("https://your-bridge:8746", text: $address).textContentType(.URL).keyboardType(.URL).accessibilityIdentifier("bridgeURL")
                             Divider()
                             SecureField("Pairing key", text: $key).accessibilityIdentifier("pairingKey")
@@ -98,8 +60,8 @@ struct PairView: View {
                     NavigationLink("How to set up your computer") { PairingGuideView() }
                     HStack { Link("Privacy", destination: PublicHelp.privacy); Spacer(); Link("Support", destination: PublicHelp.support) }
                     Text("No Helm account is required. Work runs on your computer. Your bridge must be reachable. Away from home, use your private network connection.").font(.footnote).foregroundStyle(.secondary)
-                }.padding(24).frame(maxWidth: 620)
-            }.background(HelmStyle.background)
+                }.padding(20).frame(maxWidth: 620)
+            }.helmConsole()
         }
     }
 }
@@ -107,7 +69,7 @@ struct ConnectionStrip: View {
     @EnvironmentObject var model: AppModel
     var body: some View {
         HStack(spacing: 8) {
-            Circle().fill(model.demo || (!model.stale && model.error == nil) ? HelmStyle.accent : HelmStyle.gold).frame(width: 6, height: 6)
+            Circle().fill(model.demo ? HelmStyle.rule : !model.stale && model.error == nil ? HelmStyle.signal : HelmStyle.gold).frame(width: 6, height: 6)
             Text(model.demo ? "Demo · sample projects" : model.error == nil && !model.stale ? "Bridge connected" : "Connection needs attention")
             Spacer()
             if let date = model.lastSuccess { Text(date, style: .relative).monospacedDigit() }
@@ -120,11 +82,6 @@ struct OverviewView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
                 ConnectionStrip()
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("AT THE HELM").font(.caption.monospaced()).tracking(3).foregroundStyle(HelmStyle.accent)
-                    Text(model.pending.isEmpty ? "Room to focus." : "Your next move.").font(.largeTitle.weight(.semibold))
-                    Text(model.pending.isEmpty ? "Keep an eye on the work as it develops." : "\(model.pending.count) \(model.pending.count == 1 ? "question is" : "questions are") waiting for your direction.").foregroundStyle(.secondary)
-                }
                 HStack(spacing: 12) { metric("PROJECTS", value: model.snapshot.projects.count, icon: "square.stack.3d.up"); metric("NEED YOU", value: model.pending.count, icon: "bubble.left.and.bubble.right") }
                 FleetStrip()
                 if let error = model.error { Label(error, systemImage: "wifi.exclamationmark").font(.footnote).foregroundStyle(HelmStyle.gold) }
@@ -139,17 +96,17 @@ struct OverviewView: View {
                         }
                     }.buttonStyle(.plain)
                 }
-                HStack { Text("Latest updates").font(.title2.weight(.semibold)); Spacer(); if model.refreshing { ProgressView() } }
+                HStack { ConsoleHeading(title: "Activity log", icon: "text.alignleft"); if model.refreshing { ProgressView() } }
                 if model.snapshot.updates.isEmpty { EmptyPanel(title: "Ready for your first update", text: "Connect a Claude Code or Codex project using the Helm bridge. Its updates will appear here.", icon: "antenna.radiowaves.left.and.right") }
                 ForEach(model.snapshot.updates.prefix(50)) { update in UpdateCard(update: update, project: model.snapshot.projectName(update.projectId)) }
             }.padding(20).frame(maxWidth: 760)
-        }.background(HelmStyle.background).navigationTitle("Command Helm").navigationBarTitleDisplayMode(.inline).refreshable { await model.refresh() }
+        }.helmConsole().navigationTitle("Command Helm").navigationBarTitleDisplayMode(.inline).refreshable { await model.refresh() }
             .toolbar { ToolbarItem(placement: .topBarTrailing) { Button { Task { await model.refresh() } } label: { Image(systemName: "arrow.clockwise") }.accessibilityLabel("Refresh") } }
     }
     func metric(_ title: String, value: Int, icon: String) -> some View {
         Panel { VStack(alignment: .leading, spacing: 14) {
             HStack { Image(systemName: icon); Spacer(); Text(title).font(.system(size: 10, weight: .semibold, design: .monospaced)) }.foregroundStyle(.secondary)
-            Text("\(value)").font(.system(size: 36, weight: .light, design: .rounded)).monospacedDigit()
+            Text("\(value)").font(.largeTitle.monospaced().weight(.medium)).monospacedDigit().foregroundStyle(HelmStyle.signal)
         } }
     }
 }
@@ -158,7 +115,7 @@ struct FleetStrip: View {
     private var deviceIDs: [String] { Set(model.snapshot.projects.map { model.activityDeviceID($0.id) }).sorted() }
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("COMPUTER ACTIVITY").font(.caption.monospaced()).tracking(2).foregroundStyle(HelmStyle.accent)
+            ConsoleHeading(title: "Computer activity", icon: "network")
             if deviceIDs.isEmpty { Text("Projects appear when a connected agent reports activity.").font(.footnote).foregroundStyle(.secondary) }
             ForEach(deviceIDs, id: \.self) { id in
                 let projects = model.snapshot.projects.filter { model.activityDeviceID($0.id) == id }
@@ -214,7 +171,7 @@ struct InboxView: View {
                     }.buttonStyle(.plain)
                 }
             }.padding(20).frame(maxWidth: 760)
-        }.background(HelmStyle.background).navigationTitle("Inbox").refreshable { await model.refresh() }
+        }.helmConsole().navigationTitle("Inbox").refreshable { await model.refresh() }
     }
 }
 struct QuestionView: View {
@@ -265,7 +222,7 @@ struct QuestionView: View {
                     }
                     if let error { Text(error).foregroundStyle(HelmStyle.gold).font(.callout) }
                 }.padding(24).frame(maxWidth: 680)
-            }.background(HelmStyle.background).navigationTitle("Your direction").navigationBarTitleDisplayMode(.inline)
+            }.helmConsole().navigationTitle("Your direction").navigationBarTitleDisplayMode(.inline)
                 .sheet(isPresented: $showConsent) { AIConsentView(deviceName: model.deviceName(.init(rawValue: consentTarget))) { model.allowAI(consentTarget); showConsent = false; sendAnswer() } }
                 .toolbar { ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() } } }
         }
@@ -289,7 +246,7 @@ struct ProjectsView: View {
                     }.buttonStyle(.plain)
                 }
             }.padding(20).frame(maxWidth: 760)
-        }.background(HelmStyle.background).navigationTitle("Projects").searchable(text: $search, prompt: "Find a project").refreshable { await model.refresh() }
+        }.helmConsole().navigationTitle("Projects").searchable(text: $search, prompt: "Find a project").refreshable { await model.refresh() }
     }
 }
 struct ProjectView: View {
@@ -313,7 +270,7 @@ struct ProjectView: View {
                 ForEach(model.snapshot.updates.filter { $0.projectId == project.id }) { update in UpdateCard(update: update, project: project.name) }
                 if !model.snapshot.updates.contains(where: { $0.projectId == project.id }) { EmptyPanel(title: "Connected, awaiting an update", text: "This project’s agent has checked in. Its next status report will appear here.", icon: "antenna.radiowaves.left.and.right") }
             }.padding(20).frame(maxWidth: 760)
-        }.background(HelmStyle.background).navigationTitle(project.name)
+        }.helmConsole().navigationTitle(project.name)
     }
 }
 struct AgentControlView: View {
@@ -374,23 +331,26 @@ struct SettingsView: View {
                 if let url = model.connection?.url { LabeledContent("Bridge", value: url.host ?? "") }
                 Text("Updates refresh every five seconds while the app is open. Background push alerts are not enabled in this build.").font(.footnote).foregroundStyle(.secondary)
                 Button(model.demo ? "Leave demo" : "Unpair this phone", role: .destructive) { if model.demo { model.disconnect() } else { confirmUnpair = true } }
-            }
+            }.listRowBackground(HelmStyle.surface)
             Section("Project connections") {
                 Text("Launch Claude Code or Codex with the Helm connector on your Mac. Ask the agent to use helm_status for updates and helm_ask when it needs your direction.")
                 Text("Existing sessions need the connector added before they can send questions here. Unreported work is not shown as live.").font(.footnote).foregroundStyle(.secondary)
-            }
+            }.listRowBackground(HelmStyle.surface)
+            Section("Desktop IDE") {
+                Link("Download Command Helm Desktop", destination: PublicHelp.desktop).accessibilityIdentifier("downloadDesktopSettings")
+                Text("Mac preview for Apple Silicon. See the release notes before installing.").font(.footnote).foregroundStyle(.secondary)
+            }.listRowBackground(HelmStyle.surface)
             Section("Help & privacy") {
                 NavigationLink("Connections & setup") { ConnectionsView() }
                 Link("Getting started", destination: PublicHelp.setup)
                 Link("Privacy policy", destination: PublicHelp.privacy)
                 Link("Support", destination: PublicHelp.support)
                 NavigationLink("Third-party notices") { NoticesView() }
-            }
+            }.listRowBackground(HelmStyle.surface)
             Section("Command Helm") {
                 LabeledContent("Version", value: "\((Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String) ?? "?") (\((Bundle.main.infoDictionary?["CFBundleVersion"] as? String) ?? "?"))")
-                Text("Your computers, within reach.").foregroundStyle(.secondary)
             }
-        }.scrollContentBackground(.hidden).background(HelmStyle.background).navigationTitle("Settings")
+        }.helmConsole().navigationTitle("Settings").navigationBarTitleDisplayMode(.inline)
             .confirmationDialog("Unpair this phone?", isPresented: $confirmUnpair, titleVisibility: .visible) {
                 Button("Remove pairing and local drafts", role: .destructive) { model.disconnect() }
             } message: { Text("Removes this phone’s pairing, task draft and AI sharing choices. Computer files and running sessions remain there. This does not revoke a copied key; rotate it on the bridge to revoke all copies.") }

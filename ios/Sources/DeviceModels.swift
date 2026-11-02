@@ -45,6 +45,7 @@ struct ConnectionsSnapshot: Codable, Equatable {
 enum PublicHelp {
     static let base = "https://github.com/sagedeutschle/command-helm-companion/blob/main/docs/"
     static let setup = URL(string: base + "getting-started.md")!
+    static let desktop = URL(string: "https://github.com/sagedeutschle/command-helm-desktop/releases")!
     static let privacy = URL(string: base + "privacy.md")!
     static let support = URL(string: base + "support.md")!
 }
